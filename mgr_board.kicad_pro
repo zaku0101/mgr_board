@@ -386,6 +386,18 @@
     [
       "14d3b6cb-e4ae-41db-89eb-e86b07bc47b0",
       "Root"
+    ],
+    [
+      "0894c0a4-ee9a-4857-abde-a7dc8c387700",
+      "LED_Power_Section_1"
+    ],
+    [
+      "d7eb2425-d51d-4d8e-8dc4-8a8864a47a1c",
+      "Led_Power_Section_2"
+    ],
+    [
+      "af01da13-ef5e-4452-a25d-7ea447b525d6",
+      "LED_Section"
     ]
   ],
   "text_variables": {}
