@@ -1820,8 +1820,8 @@
 		)
 		(uuid "000d63ae-5824-4adf-8eb4-ae09d460f85e")
 	)
-	(global_label "LED_6"
-		(shape input)
+	(hierarchical_label "LED_6"
+		(shape output)
 		(at 118.11 40.64 0)
 		(fields_autoplaced yes)
 		(effects
@@ -1830,19 +1830,21 @@
 			)
 			(justify left)
 		)
-		(uuid "733d804d-28ac-48a8-90dc-3e375189a368")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 126.7194 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "149e9fdf-813e-4f39-97ef-358e9abd6c3d")
 	)
-	(global_label "ADIM_0"
+	(hierarchical_label "I_LED_6"
+		(shape output)
+		(at 118.11 33.02 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ca508a73-c380-4262-acd3-9a6cd955ba9f")
+	)
+	(hierarchical_label "ADIM_0"
 		(shape input)
 		(at 53.34 39.37 180)
 		(fields_autoplaced yes)
@@ -1852,39 +1854,7 @@
 			)
 			(justify right)
 		)
-		(uuid "78f88e20-7a69-44d1-ba11-77e0e416fe2f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 43.7629 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "I_LED_6"
-		(shape input)
-		(at 118.11 33.02 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8c3551b6-b1c4-409b-93e5-0add83fed4b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 128.2918 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
+		(uuid "e6da1aa5-346a-49bb-aad5-2ab6df4b0f35")
 	)
 	(symbol
 		(lib_id "PCM_SL_Resistors:Resistor")
