@@ -565,188 +565,250 @@
 		)
 	)
 	(junction
-		(at 166.37 92.71)
+		(at 201.93 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "044df48e-4413-4909-af15-58682280d4f4")
+	)
+	(junction
+		(at 165.1 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0830d0e5-4cd2-4a00-abca-9c3d2913845a")
+	)
+	(junction
+		(at 167.64 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0871f96a-fa7f-410a-bd7d-779080885ffd")
 	)
 	(junction
-		(at 201.93 71.12)
+		(at 203.2 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e7ddbb9-cc96-4328-a6aa-81cf90d8c56c")
 	)
 	(junction
-		(at 128.27 45.72)
+		(at 129.54 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0f78a241-5529-489f-88a6-6e18f2079145")
 	)
 	(junction
-		(at 80.01 67.31)
+		(at 72.39 52.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12dce16f-4cf5-484a-a4a4-5bec5c814dc2")
 	)
 	(junction
-		(at 129.54 92.71)
+		(at 130.81 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "157e2ff9-c57b-4ea4-8597-389dd3baee36")
 	)
 	(junction
-		(at 203.2 93.98)
+		(at 128.27 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1627aedb-aed3-4f38-9b21-b6718378a8b5")
+	)
+	(junction
+		(at 204.47 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18325cee-d52d-4744-9570-74fb8bfaa748")
 	)
 	(junction
-		(at 80.01 115.57)
+		(at 166.37 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d8c98ee-5d16-41ab-8a99-9fe339fb213d")
+	)
+	(junction
+		(at 203.2 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e7ca9c7-0fce-49c7-8c4e-1c85f9233b5c")
+	)
+	(junction
+		(at 129.54 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f6c94e9-266e-499e-b478-6bdc2dffca2d")
+	)
+	(junction
+		(at 129.54 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "350a7001-8d47-4667-88e9-f37a6c7ad027")
+	)
+	(junction
+		(at 72.39 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3e5576d6-b39a-49c0-8399-f452f4ba082f")
 	)
 	(junction
-		(at 129.54 69.85)
+		(at 130.81 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3eefea6a-cef3-4af3-bc21-ec9fd62f9912")
 	)
 	(junction
-		(at 80.01 49.53)
+		(at 72.39 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "464e439f-81d5-47e8-bfef-4d562af098ad")
 	)
 	(junction
-		(at 80.01 69.85)
+		(at 72.39 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47a11932-06e7-4bf7-a45a-49585ecb792d")
 	)
 	(junction
-		(at 166.37 71.12)
+		(at 167.64 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4bc8566d-e440-4851-84fd-929953eba1df")
 	)
 	(junction
-		(at 80.01 72.39)
+		(at 72.39 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ebfc840-2601-414c-97ee-7ecaeb9b5bdc")
 	)
 	(junction
-		(at 201.93 45.72)
+		(at 201.93 27.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61920dd8-304b-48e3-9f43-50a09186ec93")
+	)
+	(junction
+		(at 166.37 74.93)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "655d6ee9-5a69-4ba8-8bcb-f76e782f1066")
+	)
+	(junction
+		(at 130.81 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "777b6c05-0d76-419e-8837-0652c0681f1c")
+	)
+	(junction
+		(at 203.2 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85099879-aa63-476e-9719-89c40c782eff")
 	)
 	(junction
-		(at 80.01 92.71)
+		(at 72.39 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "883723a1-93f0-4bd0-90c7-b82c0b7272dc")
 	)
 	(junction
-		(at 80.01 90.17)
+		(at 72.39 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8ce08ccf-fa2b-4959-a17a-d297b8728b09")
 	)
 	(junction
-		(at 203.2 115.57)
+		(at 204.47 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f158ebd-2fd4-4d20-b449-b0f40ed82045")
 	)
 	(junction
-		(at 80.01 46.99)
+		(at 72.39 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ba8efff-f9e0-42f3-9a54-6d4c1b2cc881")
 	)
 	(junction
-		(at 80.01 118.11)
+		(at 72.39 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9d436fc4-f5c4-4e9a-97ae-b3e143f25b22")
 	)
 	(junction
-		(at 130.81 115.57)
+		(at 132.08 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a823623d-2be7-40c1-9771-1776977173e4")
 	)
 	(junction
-		(at 80.01 95.25)
+		(at 203.2 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a9b06261-98ae-4384-b7e7-85194521a165")
+	)
+	(junction
+		(at 72.39 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b285cced-f65c-4a5d-ac4b-2de353aec393")
 	)
 	(junction
-		(at 165.1 45.72)
+		(at 166.37 33.02)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfcaa94c-f42f-4c0e-b313-1f1ead11974c")
 	)
 	(junction
-		(at 80.01 113.03)
+		(at 72.39 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c6f2bbaa-d84f-4362-a817-d11e61aab0b2")
 	)
 	(junction
-		(at 80.01 44.45)
+		(at 72.39 29.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cf52674c-6b1c-47e9-8ad9-d5e58d90c4d9")
 	)
 	(junction
-		(at 166.37 115.57)
+		(at 167.64 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e0c547d3-6140-47a3-8d89-7bd9b1e38077")
 	)
+	(junction
+		(at 166.37 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea4de551-e10f-4d8b-81b5-580e3a4dfbac")
+	)
 	(no_connect
-		(at 44.45 49.53)
+		(at 36.83 34.29)
 		(uuid "2ff55731-1333-4292-a066-cb61cb0c30e3")
 	)
 	(no_connect
-		(at 44.45 72.39)
+		(at 36.83 57.15)
 		(uuid "459b6ae1-533c-4645-b858-462bc9781209")
 	)
 	(no_connect
-		(at 44.45 95.25)
+		(at 36.83 80.01)
 		(uuid "97afb8ae-ddc9-4999-8a4a-ddfaf952c38d")
 	)
 	(no_connect
-		(at 44.45 118.11)
+		(at 36.83 102.87)
 		(uuid "9b5c8aa4-8180-4f61-b4f6-e0706567f868")
 	)
 	(wire
 		(pts
-			(xy 27.94 46.99) (xy 44.45 46.99)
+			(xy 163.83 97.79) (xy 166.37 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "019b8f2c-43d6-473d-a212-3e50b0abb576")
+		(uuid "08482560-c525-4e3e-969d-0888f232d3fc")
 	)
 	(wire
 		(pts
-			(xy 193.04 88.9) (xy 203.2 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "05770877-6b20-4cca-b1cb-cd63e5b25a1b")
-	)
-	(wire
-		(pts
-			(xy 80.01 92.71) (xy 80.01 95.25)
+			(xy 72.39 77.47) (xy 72.39 80.01)
 		)
 		(stroke
 			(width 0)
@@ -756,7 +818,17 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 45.72) (xy 201.93 48.26)
+			(xy 166.37 93.98) (xy 166.37 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dbd7089-b1ea-41b8-bb9f-77336acccea9")
+	)
+	(wire
+		(pts
+			(xy 203.2 33.02) (xy 203.2 35.56)
 		)
 		(stroke
 			(width 0)
@@ -766,7 +838,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 87.63) (xy 80.01 90.17)
+			(xy 72.39 72.39) (xy 72.39 74.93)
 		)
 		(stroke
 			(width 0)
@@ -776,7 +848,47 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 121.92) (xy 80.01 118.11)
+			(xy 201.93 93.98) (xy 203.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16aea400-840e-4510-ac2e-aeb47b1b99ae")
+	)
+	(wire
+		(pts
+			(xy 165.1 24.13) (xy 165.1 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa28b09-4b39-4707-8f26-43d4eb6ce390")
+	)
+	(wire
+		(pts
+			(xy 199.39 27.94) (xy 201.93 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1c4090c5-e579-46dc-b0d8-52096616a9e7")
+	)
+	(wire
+		(pts
+			(xy 200.66 76.2) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "201caf9d-a05a-484a-87bb-6cb109e55239")
+	)
+	(wire
+		(pts
+			(xy 72.39 106.68) (xy 72.39 102.87)
 		)
 		(stroke
 			(width 0)
@@ -786,7 +898,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 40.64) (xy 165.1 40.64)
+			(xy 165.1 27.94) (xy 166.37 27.94)
 		)
 		(stroke
 			(width 0)
@@ -796,7 +908,17 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 99.06) (xy 44.45 97.79)
+			(xy 127 52.07) (xy 129.54 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "238a800b-45be-442a-9aa4-f72e778474c5")
+	)
+	(wire
+		(pts
+			(xy 36.83 83.82) (xy 36.83 82.55)
 		)
 		(stroke
 			(width 0)
@@ -806,7 +928,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 43.18) (xy 165.1 45.72)
+			(xy 166.37 30.48) (xy 166.37 33.02)
 		)
 		(stroke
 			(width 0)
@@ -816,7 +938,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 45.72) (xy 165.1 48.26)
+			(xy 166.37 33.02) (xy 166.37 35.56)
 		)
 		(stroke
 			(width 0)
@@ -826,7 +948,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 69.85) (xy 129.54 72.39)
+			(xy 130.81 57.15) (xy 130.81 59.69)
 		)
 		(stroke
 			(width 0)
@@ -836,17 +958,17 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 87.63) (xy 44.45 87.63)
+			(xy 166.37 53.34) (xy 167.64 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2ede6a6b-b5d1-4a71-b43b-772d0c8e2a0f")
+		(uuid "2cf6da5d-d47b-4ee9-970c-a0cd8ce4386e")
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 128.27 45.72)
+			(xy 129.54 30.48) (xy 129.54 33.02)
 		)
 		(stroke
 			(width 0)
@@ -856,7 +978,7 @@
 	)
 	(wire
 		(pts
-			(xy 201.93 68.58) (xy 201.93 71.12)
+			(xy 203.2 55.88) (xy 203.2 58.42)
 		)
 		(stroke
 			(width 0)
@@ -866,17 +988,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 44.45) (xy 44.45 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3296f390-50fa-4088-860d-39cad6880bcf")
-	)
-	(wire
-		(pts
-			(xy 166.37 113.03) (xy 166.37 115.57)
+			(xy 167.64 100.33) (xy 167.64 102.87)
 		)
 		(stroke
 			(width 0)
@@ -886,17 +998,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 41.91) (xy 44.45 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36d74032-30f2-4cfc-bc88-863621c02dd4")
-	)
-	(wire
-		(pts
-			(xy 130.81 115.57) (xy 130.81 118.11)
+			(xy 132.08 102.87) (xy 132.08 105.41)
 		)
 		(stroke
 			(width 0)
@@ -906,7 +1008,47 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 92.71) (xy 166.37 95.25)
+			(xy 163.83 24.13) (xy 165.1 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bf0d471-ba9b-4957-b970-76d26d0a2461")
+	)
+	(wire
+		(pts
+			(xy 166.37 74.93) (xy 167.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d38763d-13ac-446c-96c8-561c1db2e45e")
+	)
+	(wire
+		(pts
+			(xy 203.2 72.39) (xy 203.2 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3db3853b-b359-4011-bc5c-07aa82478e1d")
+	)
+	(wire
+		(pts
+			(xy 129.54 71.12) (xy 129.54 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e575ce4-aa4a-4cf1-904f-399ac3d12650")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 167.64 82.55)
 		)
 		(stroke
 			(width 0)
@@ -916,7 +1058,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 53.34) (xy 44.45 52.07)
+			(xy 36.83 38.1) (xy 36.83 36.83)
 		)
 		(stroke
 			(width 0)
@@ -926,17 +1068,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 113.03) (xy 44.45 113.03)
+			(xy 166.37 71.12) (xy 166.37 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45a2c63e-f120-4376-bbac-2a04b9fc5ec0")
+		(uuid "474eda0c-3962-4f73-9767-17acaacdabcf")
 	)
 	(wire
 		(pts
-			(xy 80.01 46.99) (xy 80.01 49.53)
+			(xy 72.39 31.75) (xy 72.39 34.29)
 		)
 		(stroke
 			(width 0)
@@ -946,7 +1088,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 99.06) (xy 80.01 95.25)
+			(xy 72.39 83.82) (xy 72.39 80.01)
 		)
 		(stroke
 			(width 0)
@@ -956,7 +1098,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 113.03) (xy 203.2 115.57)
+			(xy 204.47 100.33) (xy 204.47 102.87)
 		)
 		(stroke
 			(width 0)
@@ -966,17 +1108,17 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 110.49) (xy 166.37 110.49)
+			(xy 129.54 74.93) (xy 130.81 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5274c281-1f89-4774-b82e-d1191225f713")
+		(uuid "55b102d1-2b31-42aa-8fde-6adf993fe90b")
 	)
 	(wire
 		(pts
-			(xy 166.37 90.17) (xy 166.37 92.71)
+			(xy 167.64 77.47) (xy 167.64 80.01)
 		)
 		(stroke
 			(width 0)
@@ -986,7 +1128,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 76.2) (xy 44.45 74.93)
+			(xy 36.83 60.96) (xy 36.83 59.69)
 		)
 		(stroke
 			(width 0)
@@ -996,17 +1138,27 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 66.04) (xy 166.37 66.04)
+			(xy 163.83 74.93) (xy 166.37 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "63a291fa-827d-4b09-a78b-a6af2909c29a")
+		(uuid "5f1072cb-87a4-499a-83da-72a74cfd0fc4")
 	)
 	(wire
 		(pts
-			(xy 80.01 44.45) (xy 80.01 46.99)
+			(xy 166.37 49.53) (xy 166.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "644e9e50-2125-440b-afe0-f1259796b775")
+	)
+	(wire
+		(pts
+			(xy 72.39 29.21) (xy 72.39 31.75)
 		)
 		(stroke
 			(width 0)
@@ -1016,7 +1168,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 90.17) (xy 129.54 92.71)
+			(xy 130.81 77.47) (xy 130.81 80.01)
 		)
 		(stroke
 			(width 0)
@@ -1026,7 +1178,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 91.44) (xy 203.2 93.98)
+			(xy 204.47 78.74) (xy 204.47 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1036,7 +1188,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 113.03) (xy 80.01 115.57)
+			(xy 72.39 97.79) (xy 72.39 100.33)
 		)
 		(stroke
 			(width 0)
@@ -1046,7 +1198,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 128.27 48.26)
+			(xy 129.54 33.02) (xy 129.54 35.56)
 		)
 		(stroke
 			(width 0)
@@ -1056,27 +1208,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 67.31) (xy 44.45 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6de97c89-ffe4-4663-9544-3fbcde079798")
-	)
-	(wire
-		(pts
-			(xy 27.94 90.17) (xy 44.45 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "71ce36be-e730-43e1-b754-58930c9cab3f")
-	)
-	(wire
-		(pts
-			(xy 80.01 64.77) (xy 80.01 67.31)
+			(xy 72.39 49.53) (xy 72.39 52.07)
 		)
 		(stroke
 			(width 0)
@@ -1086,7 +1218,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 40.64) (xy 201.93 40.64)
+			(xy 201.93 27.94) (xy 203.2 27.94)
 		)
 		(stroke
 			(width 0)
@@ -1096,7 +1228,37 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 76.2) (xy 80.01 72.39)
+			(xy 166.37 97.79) (xy 167.64 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74ed6d0c-9d6a-487b-8fe2-e8336fbd01e6")
+	)
+	(wire
+		(pts
+			(xy 203.2 76.2) (xy 204.47 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78c18d11-a2bb-4108-8ac1-df308161f0fb")
+	)
+	(wire
+		(pts
+			(xy 165.1 71.12) (xy 166.37 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d1c45b6-29a8-474c-8c61-f69bf5b47607")
+	)
+	(wire
+		(pts
+			(xy 72.39 60.96) (xy 72.39 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1106,7 +1268,27 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 67.31) (xy 129.54 69.85)
+			(xy 200.66 97.79) (xy 203.2 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e05cb97-74fe-4697-8784-96432d76f04d")
+	)
+	(wire
+		(pts
+			(xy 201.93 72.39) (xy 203.2 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ff00869-2328-4fdd-ada7-8e6e522f7e5b")
+	)
+	(wire
+		(pts
+			(xy 130.81 54.61) (xy 130.81 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1116,7 +1298,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 115.57) (xy 166.37 118.11)
+			(xy 167.64 102.87) (xy 167.64 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1126,7 +1308,17 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 121.92) (xy 44.45 120.65)
+			(xy 201.93 53.34) (xy 203.2 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a729f29-b383-4543-beed-51dd1f702c09")
+	)
+	(wire
+		(pts
+			(xy 36.83 106.68) (xy 36.83 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1136,7 +1328,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 110.49) (xy 44.45 110.49)
+			(xy 127 24.13) (xy 128.27 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cd26c38-102c-4e30-9f8d-e82fea23487d")
+	)
+	(wire
+		(pts
+			(xy 35.56 95.25) (xy 36.83 95.25)
 		)
 		(stroke
 			(width 0)
@@ -1146,7 +1348,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 67.31) (xy 80.01 69.85)
+			(xy 72.39 52.07) (xy 72.39 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1156,27 +1358,67 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 69.85) (xy 44.45 69.85)
+			(xy 127 74.93) (xy 129.54 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "984b615a-f416-449c-9411-8fb4c439dcba")
+		(uuid "8fbc78e8-1d9c-490e-9127-a9ac01bd97cf")
 	)
 	(wire
 		(pts
-			(xy 156.21 87.63) (xy 166.37 87.63)
+			(xy 128.27 97.79) (xy 130.81 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "997baca9-805d-42d5-9dfd-e95392727b20")
+		(uuid "90d30e1d-c8b6-4311-a393-51a623eab2be")
 	)
 	(wire
 		(pts
-			(xy 201.93 71.12) (xy 201.93 73.66)
+			(xy 200.66 49.53) (xy 201.93 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92c94a1a-a60a-46d2-82a0-9c30d5b25a2c")
+	)
+	(wire
+		(pts
+			(xy 163.83 53.34) (xy 166.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93f74f5e-2ea2-4527-b07b-0c29e5cb7d0e")
+	)
+	(wire
+		(pts
+			(xy 200.66 24.13) (xy 201.93 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95df1f91-0aa5-48f1-825d-85fde9cc8083")
+	)
+	(wire
+		(pts
+			(xy 201.93 49.53) (xy 201.93 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9aadac10-898d-4aa6-91fe-a919f4e7e8a4")
+	)
+	(wire
+		(pts
+			(xy 203.2 58.42) (xy 203.2 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1186,7 +1428,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 92.71) (xy 129.54 95.25)
+			(xy 130.81 80.01) (xy 130.81 82.55)
 		)
 		(stroke
 			(width 0)
@@ -1196,7 +1438,27 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 53.34) (xy 80.01 49.53)
+			(xy 165.1 93.98) (xy 166.37 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb76633-db23-4b1a-84e2-9933d1670eb2")
+	)
+	(wire
+		(pts
+			(xy 129.54 52.07) (xy 130.81 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d373073-ff1e-40c4-a253-664f260084a2")
+	)
+	(wire
+		(pts
+			(xy 72.39 38.1) (xy 72.39 34.29)
 		)
 		(stroke
 			(width 0)
@@ -1206,27 +1468,67 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 110.49) (xy 203.2 110.49)
+			(xy 130.81 97.79) (xy 132.08 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ff296c1-95c1-48e0-b8c6-0eabe75b2ca3")
+		(uuid "a135b4b0-6940-4506-a528-8cdbc4ffff02")
 	)
 	(wire
 		(pts
-			(xy 27.94 92.71) (xy 44.45 92.71)
+			(xy 129.54 93.98) (xy 130.81 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac779d18-caeb-409a-8aa1-1d48118154f3")
+		(uuid "a3ec1aae-8310-4c0d-8511-38298ece2e6a")
 	)
 	(wire
 		(pts
-			(xy 80.01 69.85) (xy 80.01 72.39)
+			(xy 165.1 49.53) (xy 166.37 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad0337d6-1cf0-48e0-8e8e-fd6e4cd07fa5")
+	)
+	(wire
+		(pts
+			(xy 128.27 48.26) (xy 129.54 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae1ccddc-bb63-43dd-8cd5-b7ddc95428d7")
+	)
+	(wire
+		(pts
+			(xy 199.39 53.34) (xy 201.93 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff70d0e-e5a6-4330-bd55-2275e01d8aad")
+	)
+	(wire
+		(pts
+			(xy 125.73 27.94) (xy 128.27 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b60e6ec2-8ca3-483a-a59d-91b436a50d57")
+	)
+	(wire
+		(pts
+			(xy 72.39 54.61) (xy 72.39 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1236,7 +1538,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 115.57) (xy 80.01 118.11)
+			(xy 72.39 100.33) (xy 72.39 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1246,7 +1548,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 71.12) (xy 166.37 73.66)
+			(xy 167.64 58.42) (xy 167.64 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1256,7 +1558,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 110.49) (xy 80.01 113.03)
+			(xy 72.39 95.25) (xy 72.39 97.79)
 		)
 		(stroke
 			(width 0)
@@ -1266,7 +1568,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 115.57) (xy 203.2 118.11)
+			(xy 204.47 102.87) (xy 204.47 105.41)
 		)
 		(stroke
 			(width 0)
@@ -1276,7 +1578,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 90.17) (xy 80.01 92.71)
+			(xy 72.39 74.93) (xy 72.39 77.47)
 		)
 		(stroke
 			(width 0)
@@ -1286,27 +1588,37 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 87.63) (xy 129.54 87.63)
+			(xy 128.27 71.12) (xy 129.54 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf095175-5f2a-4a32-9720-892a58f57b7f")
+		(uuid "cbd04a52-761f-487a-b5e2-3dd03208f870")
 	)
 	(wire
 		(pts
-			(xy 193.04 66.04) (xy 201.93 66.04)
+			(xy 201.93 24.13) (xy 201.93 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d76bbe5a-56a5-4252-9857-bc4fcca91637")
+		(uuid "cc8829a7-5bb2-4feb-a1ed-7a9df7c12ea0")
 	)
 	(wire
 		(pts
-			(xy 80.01 41.91) (xy 80.01 44.45)
+			(xy 203.2 93.98) (xy 203.2 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4edbd05-b780-4c70-910c-fe72947eabae")
+	)
+	(wire
+		(pts
+			(xy 72.39 26.67) (xy 72.39 29.21)
 		)
 		(stroke
 			(width 0)
@@ -1316,17 +1628,37 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 64.77) (xy 129.54 64.77)
+			(xy 203.2 97.79) (xy 204.47 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dc355dd1-4cff-446f-bc63-206298d03fde")
+		(uuid "dfe431e2-ef38-4a1b-ac95-05017e61e734")
 	)
 	(wire
 		(pts
-			(xy 203.2 93.98) (xy 203.2 96.52)
+			(xy 128.27 27.94) (xy 129.54 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1cede19-d311-42b6-b681-6e6c9f17a6a0")
+	)
+	(wire
+		(pts
+			(xy 128.27 24.13) (xy 128.27 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e20aae1b-4ad9-4615-8e6d-df9227a7d088")
+	)
+	(wire
+		(pts
+			(xy 204.47 81.28) (xy 204.47 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1336,17 +1668,17 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 115.57) (xy 44.45 115.57)
+			(xy 162.56 27.94) (xy 165.1 27.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9961307-9ca0-4f55-aa4d-d1d5e2268b69")
+		(uuid "eb73489b-6982-4483-bfd4-aa6f00cf8ee8")
 	)
 	(wire
 		(pts
-			(xy 130.81 113.03) (xy 130.81 115.57)
+			(xy 132.08 100.33) (xy 132.08 102.87)
 		)
 		(stroke
 			(width 0)
@@ -1356,7 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 68.58) (xy 166.37 71.12)
+			(xy 167.64 55.88) (xy 167.64 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1366,17 +1698,27 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 110.49) (xy 130.81 110.49)
+			(xy 130.81 93.98) (xy 130.81 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f27fda1e-98ec-44d0-95ee-4626a0063f48")
+		(uuid "ee9aedb1-de90-4415-9adb-e4ba18bf933a")
 	)
 	(wire
 		(pts
-			(xy 201.93 43.18) (xy 201.93 45.72)
+			(xy 129.54 48.26) (xy 129.54 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f47f33ae-864f-4bec-a3db-1ea00d5d75ea")
+	)
+	(wire
+		(pts
+			(xy 203.2 30.48) (xy 203.2 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1384,401 +1726,801 @@
 		)
 		(uuid "fbb96645-701b-4179-ae44-f82dd191da95")
 	)
-	(wire
-		(pts
-			(xy 27.94 64.77) (xy 44.45 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fbda7cd6-243e-44bb-a679-02909a350b8e")
-	)
-	(wire
-		(pts
-			(xy 121.92 40.64) (xy 128.27 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fca05979-84f2-402d-89e5-ad95bbc28670")
-	)
-	(label "LED_7"
-		(at 33.1216 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "00e33305-b093-401b-953b-03a927900f24")
-	)
-	(label "LED_2"
-		(at 195.58 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "03189da4-401d-4689-9749-ded709ab26a5")
-	)
-	(label "LED_3"
-		(at 33.67 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "06bd760f-032c-40cf-972e-c71018b0a32b")
-	)
-	(label "LED_3"
-		(at 121.92 64.77 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0d39a36e-0bb0-4d02-b0d2-ba5ccf01ba55")
-	)
-	(label "LED_10"
-		(at 157.48 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "25ba926e-b91b-46cf-8a79-4097e6e911a6")
-	)
-	(label "LED_0"
-		(at 32.8474 41.91 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26c73c20-0457-4553-bd5e-84b280f11502")
-	)
-	(label "LED_0"
-		(at 121.92 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3cd49514-e05a-4aeb-b8b3-c9cdf3e03459")
-	)
-	(label "LED_4"
-		(at 33.02 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3e8870e2-02cf-414e-bea8-77edf7f2c53c")
-	)
-	(label "LED_9"
-		(at 34.29 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "48142cc9-528b-4760-8bdf-95d1b4044175")
-	)
-	(label "LED_6"
-		(at 119.38 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "51dfa6a1-d584-47fc-a9c4-43bee9d15895")
-	)
-	(label "LED_8"
-		(at 193.04 88.9 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "557e4c08-2f07-486e-a451-8baa7aabdada")
-	)
-	(label "LED_5"
-		(at 33.02 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "55fea3ef-79c3-4dd3-ab07-4ac1b4f521bf")
-	)
-	(label "LED_5"
-		(at 193.04 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5845513c-5b9d-4f45-91c4-5b70db8a1ea7")
-	)
-	(label "LED_1"
-		(at 158.75 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5f5add5a-78f0-464c-ab37-6331cc3b8626")
-	)
-	(label "LED_1"
-		(at 33.3958 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "986be8b3-0b23-4bec-9ea1-65a3ad9a6846")
-	)
-	(label "LED_9"
-		(at 119.38 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a3f57e44-0003-43f1-b5fe-df7f26d8493f")
-	)
-	(label "LED_11"
-		(at 34.29 115.57 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a97b3913-dd92-4f7e-8e98-d7955a4aafe3")
-	)
-	(label "LED_8"
-		(at 33.02 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ac858884-f11a-47ca-882d-3e5a3897e10b")
-	)
-	(label "LED_11"
-		(at 195.58 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b5e278e0-d65b-486c-a5d3-723b0d74790c")
-	)
-	(label "LED_7"
-		(at 156.21 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c8214e28-396f-46d9-acc8-0035d17e1d88")
-	)
-	(label "LED_10"
-		(at 34.29 113.03 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "c9c9ce23-127b-4c13-b28b-5c5378f70d44")
-	)
-	(label "LED_2"
-		(at 33.67 46.99 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d8dcafd5-3a41-403c-a6e0-2a4156e26734")
-	)
-	(label "LED_6"
-		(at 33.02 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2655ca1-298f-4d52-86a0-f670912c9123")
-	)
-	(label "LED_4"
-		(at 158.75 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f9934e3b-1d05-4511-9d38-83855b77436a")
-	)
-	(hierarchical_label "LED_3"
+	(global_label "LED_4"
 		(shape input)
-		(at 27.94 64.77 180)
+		(at 163.83 53.34 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "23690868-fe50-4125-8ceb-2a9405a349c7")
+		(uuid "0b2c45a9-ed4e-47d7-ab15-82c879b9dfb0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.2206 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_5"
+	(global_label "LED_8"
 		(shape input)
-		(at 27.94 69.85 180)
+		(at 200.66 76.2 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "3d07b09e-1cee-410d-976a-9efab8891f31")
+		(uuid "11588dde-685c-4eba-b828-da3844ec3201")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 192.0506 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_6"
+	(global_label "LED_1"
 		(shape input)
-		(at 27.94 87.63 180)
+		(at 162.56 27.94 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "55957b48-f8e0-47bf-b39e-cd1fa18890c6")
+		(uuid "2e539279-df7f-415b-a845-ba4f1a037ed8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.9506 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_0"
+	(global_label "LED_2"
 		(shape input)
-		(at 27.94 41.91 180)
+		(at 36.83 31.75 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "627c45b1-538d-41c0-a6c1-a75167b3e9ed")
+		(uuid "3275bf57-d55c-406f-a00f-dfa24a090dc5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_7"
+	(global_label "LED_0"
 		(shape input)
-		(at 27.94 90.17 180)
+		(at 36.83 26.67 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "656264cf-d918-4f4b-bf64-05a060baf9fe")
+		(uuid "4bb297e1-6f37-4cad-a672-017321adc2ae")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_2"
+	(global_label "LED_9"
 		(shape input)
-		(at 27.94 46.99 180)
+		(at 35.56 95.25 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "aa8665cc-6940-4f67-9b0d-67257312461a")
+		(uuid "4dd8467f-236d-4fc4-871e-a3ab0a430bc7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.9506 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_9"
+	(global_label "V_LED_1"
 		(shape input)
-		(at 26.67 110.49 180)
+		(at 163.83 24.13 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "ae941b59-9071-47f0-8961-6ac24fcb75cd")
+		(uuid "4fa825bf-5f38-48ba-8c11-98a321e16b86")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.1644 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_8"
+	(global_label "V_LED_11"
 		(shape input)
-		(at 27.94 92.71 180)
+		(at 201.93 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "aec7c760-a56d-4c9b-90f4-621956f0a72b")
+		(uuid "5638e434-0c00-4900-b520-2441e69743e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.0549 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_10"
+	(global_label "LED_1"
 		(shape input)
-		(at 26.67 113.03 180)
+		(at 36.83 29.21 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "b9268afe-a738-412c-99d2-c993703f2160")
+		(uuid "56ed5a4b-a044-45d3-8904-cbc5f9a09f32")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_4"
+	(global_label "V_LED_7"
 		(shape input)
-		(at 27.94 67.31 180)
+		(at 165.1 71.12 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "badffa08-f2fe-4843-b999-69f6c9dbee0c")
+		(uuid "58007e14-6cd4-4ef8-8144-de496e8dd958")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.4344 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_11"
+	(global_label "V_LED_9"
 		(shape input)
-		(at 26.67 115.57 180)
+		(at 129.54 93.98 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "de8a4957-142b-4857-a0ff-a451909124b9")
+		(uuid "58434c0f-1766-4894-bea0-5356ebff95e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.8744 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "LED_1"
+	(global_label "LED_11"
 		(shape input)
-		(at 27.94 44.45 180)
+		(at 36.83 100.33 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f61dd1c5-f787-4be2-a37f-1412224086cd")
+		(uuid "5c1414a4-c898-4fe4-ae40-b997c29b2b10")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.0111 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_2"
+		(shape input)
+		(at 200.66 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5fb72d74-d885-4bd1-bb5c-84d40e5b63e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.9944 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_3"
+		(shape input)
+		(at 128.27 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6372ba25-8c32-42bc-98f3-77dc9aa282ac")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.6044 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_5"
+		(shape input)
+		(at 199.39 53.34 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "639425c0-55e3-4a06-8917-5a5744640b19")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.7806 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_8"
+		(shape input)
+		(at 36.83 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "657bdce9-ccaf-496d-8e1c-fdee6317b6a6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_8"
+		(shape input)
+		(at 201.93 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "711284a8-59b7-448a-88b2-9bace3f7364f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.2644 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_11"
+		(shape input)
+		(at 200.66 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "762e8d7e-bebd-460c-822b-83dd49cbcc25")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.8411 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_6"
+		(shape input)
+		(at 127 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7ffb11b0-3426-4564-a163-39b3d98f8b83")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.3906 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_10"
+		(shape input)
+		(at 36.83 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "836875d8-f3bf-49ab-bcec-bf24e78b937c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 27.0111 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_3"
+		(shape input)
+		(at 36.83 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8e515c8b-feaf-43ce-8991-6571b81a890d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_10"
+		(shape input)
+		(at 163.83 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a4f7df09-73c3-45aa-88f4-f2907a9d689d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.0111 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_2"
+		(shape input)
+		(at 199.39 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b29d44ac-081a-4a1b-8c24-a94488f57d45")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.7806 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_6"
+		(shape input)
+		(at 128.27 71.12 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3d1b805-4790-4a0d-afea-2898364954e5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.6044 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_3"
+		(shape input)
+		(at 127 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be5b413e-9249-4bdd-948f-32b9bf9d0f80")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.3906 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_7"
+		(shape input)
+		(at 36.83 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c01bd19a-6467-49cc-9115-fe2bc8d095b6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_4"
+		(shape input)
+		(at 36.83 52.07 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d08efd77-3ea8-4f7c-80eb-adf5dfb575d8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_0"
+		(shape input)
+		(at 127 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d4f8fb91-0eab-4259-ace6-bf43b8d9dccd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 116.3344 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_9"
+		(shape input)
+		(at 128.27 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d97edbae-1ddd-4aaf-bac1-cea14a133050")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 119.6606 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_10"
+		(shape input)
+		(at 165.1 93.98 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "dcba100d-b315-44c1-ba3c-e0b29d6ce7c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 153.2249 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_4"
+		(shape input)
+		(at 165.1 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e1dcc1b3-b009-42e6-b18f-8ce52e980666")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 154.4344 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_0"
+		(shape input)
+		(at 125.73 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6a71b0a-4a4f-462b-9073-25fa13f08585")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 117.1206 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "V_LED_5"
+		(shape input)
+		(at 200.66 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f1fa7768-8a81-4409-8b27-891badd23cde")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.9944 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_7"
+		(shape input)
+		(at 163.83 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f61edcc9-c097-4e98-99de-c91b20b60dbd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 155.2206 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_5"
+		(shape input)
+		(at 36.83 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f9275bd1-0cc4-4285-bad3-402a2397575b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LED_6"
+		(shape input)
+		(at 36.83 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff2d81c0-e021-4f39-82f1-1fcdbb784539")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 28.2206 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 95.25 0)
+		(at 130.81 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1787,7 +2529,7 @@
 		(fields_autoplaced yes)
 		(uuid "13851d7f-398b-40b0-93a1-4d134c91ec79")
 		(property "Reference" "#PWR053"
-			(at 129.54 101.6 0)
+			(at 130.81 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1796,7 +2538,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 100.33 0)
+			(at 130.81 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1804,7 +2546,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 95.25 0)
+			(at 130.81 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1813,7 +2555,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 95.25 0)
+			(at 130.81 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1822,7 +2564,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 95.25 0)
+			(at 130.81 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1844,7 +2586,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 99.06 0)
+		(at 72.39 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1853,7 +2595,7 @@
 		(fields_autoplaced yes)
 		(uuid "279fcac2-42ac-457c-8c5e-58a1d2651f4f")
 		(property "Reference" "#PWR012"
-			(at 80.01 105.41 0)
+			(at 72.39 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1862,7 +2604,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 104.14 0)
+			(at 72.39 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1870,7 +2612,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 99.06 0)
+			(at 72.39 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1879,7 +2621,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 99.06 0)
+			(at 72.39 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1888,7 +2630,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 99.06 0)
+			(at 72.39 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1910,7 +2652,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 128.27 48.26 0)
+		(at 129.54 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1919,7 +2661,7 @@
 		(fields_autoplaced yes)
 		(uuid "2dc7e536-a2f4-4eb4-ae68-26b5e014a3b9")
 		(property "Reference" "#PWR040"
-			(at 128.27 54.61 0)
+			(at 129.54 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1928,7 +2670,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 128.27 53.34 0)
+			(at 129.54 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1936,7 +2678,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 128.27 48.26 0)
+			(at 129.54 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1945,7 +2687,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 128.27 48.26 0)
+			(at 129.54 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1954,7 +2696,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 128.27 48.26 0)
+			(at 129.54 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1976,7 +2718,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 166.37 87.63 0)
+		(at 167.64 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1985,7 +2727,7 @@
 		(fields_autoplaced yes)
 		(uuid "31a9b54b-adb6-439d-9ce8-4a1d35215e14")
 		(property "Reference" "LED7"
-			(at 182.88 90.1699 0)
+			(at 184.15 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1994,7 +2736,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 91.4399 0)
+			(at 184.15 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +2746,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 182.88 85.09 0)
+			(at 184.15 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2014,7 +2756,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 182.88 87.63 0)
+			(at 184.15 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2024,7 +2766,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 166.37 87.63 0)
+			(at 167.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2033,7 +2775,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 182.88 90.17 0)
+			(at 184.15 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2043,7 +2785,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 182.88 92.71 0)
+			(at 184.15 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2053,7 +2795,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 182.88 95.25 0)
+			(at 184.15 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2063,7 +2805,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 182.88 97.79 0)
+			(at 184.15 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2073,7 +2815,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 182.88 100.33 0)
+			(at 184.15 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2083,7 +2825,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 102.87 0)
+			(at 184.15 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2112,7 +2854,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 76.2 0)
+		(at 72.39 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2121,7 +2863,7 @@
 		(fields_autoplaced yes)
 		(uuid "31d9fb89-14f0-4d5c-a0d7-0393877ba23d")
 		(property "Reference" "#PWR010"
-			(at 80.01 82.55 0)
+			(at 72.39 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2130,7 +2872,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 81.28 0)
+			(at 72.39 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2138,7 +2880,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 76.2 0)
+			(at 72.39 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2147,7 +2889,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 76.2 0)
+			(at 72.39 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2156,7 +2898,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 76.2 0)
+			(at 72.39 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2178,7 +2920,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 73.66 0)
+		(at 167.64 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2187,7 +2929,7 @@
 		(fields_autoplaced yes)
 		(uuid "32f0348e-37a9-494b-bfb2-0880c19f4a8b")
 		(property "Reference" "#PWR051"
-			(at 166.37 80.01 0)
+			(at 167.64 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2196,7 +2938,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 78.74 0)
+			(at 167.64 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2204,7 +2946,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 73.66 0)
+			(at 167.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2213,7 +2955,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 73.66 0)
+			(at 167.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2222,7 +2964,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 73.66 0)
+			(at 167.64 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2244,7 +2986,7 @@
 	)
 	(symbol
 		(lib_id "XPLDCL-00-0000-0000HC6AAAE7:XPLDCL-00-0000-0000HC6AAAE7")
-		(at 44.45 41.91 0)
+		(at 36.83 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2252,7 +2994,7 @@
 		(dnp no)
 		(uuid "3375e738-c270-401e-820f-b88fe85994a1")
 		(property "Reference" "LED12"
-			(at 62.23 36.83 0)
+			(at 54.61 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2260,7 +3002,7 @@
 			)
 		)
 		(property "Value" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 62.23 36.83 0)
+			(at 54.61 21.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2269,7 +3011,7 @@
 			)
 		)
 		(property "Footprint" "CREE_RGB_LED:XPLDCL0000000000HC6AAAE7"
-			(at 76.2 136.83 0)
+			(at 68.58 121.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2279,7 +3021,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/x/XLamp-XPLDCL.pdf"
-			(at 76.2 236.83 0)
+			(at 68.58 221.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2289,7 +3031,7 @@
 			)
 		)
 		(property "Description" "LED Lighting Color XLamp XP-L Red, Green, Blue, White - Warm (RGBW) 625nm Red, 528nm Green, 458nm Blue, 3000K White 1414 (3535 Metric)"
-			(at 44.45 41.91 0)
+			(at 36.83 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2298,7 +3040,7 @@
 			)
 		)
 		(property "Height" "2.83"
-			(at 76.2 436.83 0)
+			(at 68.58 421.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2308,7 +3050,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-XPLDCL00HC6AAAE7"
-			(at 76.2 536.83 0)
+			(at 68.58 521.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2318,7 +3060,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/XPLDCL-00-0000-0000HC6AAAE7?qs=i8QVZAFTkqRih4SMA%252BJLrw%3D%3D"
-			(at 76.2 636.83 0)
+			(at 68.58 621.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2328,7 +3070,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 76.2 736.83 0)
+			(at 68.58 721.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2338,7 +3080,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 76.2 836.83 0)
+			(at 68.58 821.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2385,7 +3127,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 203.2 88.9 0)
+		(at 204.47 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2394,7 +3136,7 @@
 		(fields_autoplaced yes)
 		(uuid "550415c1-f2ac-488e-b1bc-0c00cce14167")
 		(property "Reference" "LED8"
-			(at 219.71 91.4399 0)
+			(at 220.98 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2403,7 +3145,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 219.71 92.7099 0)
+			(at 220.98 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2413,7 +3155,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 219.71 86.36 0)
+			(at 220.98 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2423,7 +3165,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 219.71 88.9 0)
+			(at 220.98 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +3175,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 203.2 88.9 0)
+			(at 204.47 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2442,7 +3184,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 219.71 91.44 0)
+			(at 220.98 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2452,7 +3194,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 219.71 93.98 0)
+			(at 220.98 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +3204,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 219.71 96.52 0)
+			(at 220.98 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,7 +3214,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 219.71 99.06 0)
+			(at 220.98 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2482,7 +3224,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 219.71 101.6 0)
+			(at 220.98 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2492,7 +3234,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 219.71 104.14 0)
+			(at 220.98 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2521,7 +3263,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 121.92 0)
+		(at 36.83 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2530,7 +3272,7 @@
 		(fields_autoplaced yes)
 		(uuid "5aab7ae8-249e-4cd6-ac31-cab60f209356")
 		(property "Reference" "#PWR013"
-			(at 44.45 128.27 0)
+			(at 36.83 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +3281,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 127 0)
+			(at 36.83 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2547,7 +3289,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 121.92 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2556,7 +3298,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 121.92 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2565,7 +3307,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 121.92 0)
+			(at 36.83 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,7 +3329,7 @@
 	)
 	(symbol
 		(lib_id "XPLDCL-00-0000-0000HC6AAAE7:XPLDCL-00-0000-0000HC6AAAE7")
-		(at 44.45 64.77 0)
+		(at 36.83 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2595,7 +3337,7 @@
 		(dnp no)
 		(uuid "6146f38c-864f-40fd-ac38-5ab18edc853c")
 		(property "Reference" "LED13"
-			(at 62.23 59.69 0)
+			(at 54.61 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,7 +3345,7 @@
 			)
 		)
 		(property "Value" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 62.23 59.69 0)
+			(at 54.61 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,7 +3354,7 @@
 			)
 		)
 		(property "Footprint" "CREE_RGB_LED:XPLDCL0000000000HC6AAAE7"
-			(at 76.2 159.69 0)
+			(at 68.58 144.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2622,7 +3364,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/x/XLamp-XPLDCL.pdf"
-			(at 76.2 259.69 0)
+			(at 68.58 244.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2632,7 +3374,7 @@
 			)
 		)
 		(property "Description" "LED Lighting Color XLamp XP-L Red, Green, Blue, White - Warm (RGBW) 625nm Red, 528nm Green, 458nm Blue, 3000K White 1414 (3535 Metric)"
-			(at 44.45 64.77 0)
+			(at 36.83 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2641,7 +3383,7 @@
 			)
 		)
 		(property "Height" "2.83"
-			(at 76.2 459.69 0)
+			(at 68.58 444.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +3393,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-XPLDCL00HC6AAAE7"
-			(at 76.2 559.69 0)
+			(at 68.58 544.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2661,7 +3403,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/XPLDCL-00-0000-0000HC6AAAE7?qs=i8QVZAFTkqRih4SMA%252BJLrw%3D%3D"
-			(at 76.2 659.69 0)
+			(at 68.58 644.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2671,7 +3413,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 76.2 759.69 0)
+			(at 68.58 744.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2681,7 +3423,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 76.2 859.69 0)
+			(at 68.58 844.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2728,7 +3470,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 201.93 66.04 0)
+		(at 203.2 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2737,7 +3479,7 @@
 		(fields_autoplaced yes)
 		(uuid "6cfbfb82-8006-4d58-9ec2-f6d30b257199")
 		(property "Reference" "LED5"
-			(at 218.44 68.5799 0)
+			(at 219.71 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2746,7 +3488,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 218.44 69.8499 0)
+			(at 219.71 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2756,7 +3498,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 218.44 63.5 0)
+			(at 219.71 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2766,7 +3508,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 218.44 66.04 0)
+			(at 219.71 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2776,7 +3518,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 201.93 66.04 0)
+			(at 203.2 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2785,7 +3527,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 218.44 68.58 0)
+			(at 219.71 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2795,7 +3537,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 218.44 71.12 0)
+			(at 219.71 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2805,7 +3547,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 218.44 73.66 0)
+			(at 219.71 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2815,7 +3557,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 218.44 76.2 0)
+			(at 219.71 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2825,7 +3567,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 218.44 78.74 0)
+			(at 219.71 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2835,7 +3577,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 218.44 81.28 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2864,7 +3606,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 118.11 0)
+		(at 167.64 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2873,7 +3615,7 @@
 		(fields_autoplaced yes)
 		(uuid "6e3e9d20-f076-4b49-963e-5f9c88bed464")
 		(property "Reference" "#PWR057"
-			(at 166.37 124.46 0)
+			(at 167.64 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2882,7 +3624,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 123.19 0)
+			(at 167.64 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2890,7 +3632,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 118.11 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2899,7 +3641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 118.11 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2908,7 +3650,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 118.11 0)
+			(at 167.64 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2930,7 +3672,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 165.1 48.26 0)
+		(at 166.37 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2939,7 +3681,7 @@
 		(fields_autoplaced yes)
 		(uuid "72f6160b-c047-448f-878c-9ac7c7591bf7")
 		(property "Reference" "#PWR048"
-			(at 165.1 54.61 0)
+			(at 166.37 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2948,7 +3690,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 165.1 53.34 0)
+			(at 166.37 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2956,7 +3698,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 165.1 48.26 0)
+			(at 166.37 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2965,7 +3707,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 165.1 48.26 0)
+			(at 166.37 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2974,7 +3716,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 165.1 48.26 0)
+			(at 166.37 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2996,7 +3738,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 53.34 0)
+		(at 72.39 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3005,7 +3747,7 @@
 		(fields_autoplaced yes)
 		(uuid "7580e3c6-1d5b-478d-a406-c3c621d88618")
 		(property "Reference" "#PWR05"
-			(at 80.01 59.69 0)
+			(at 72.39 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3014,7 +3756,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 58.42 0)
+			(at 72.39 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3022,7 +3764,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 53.34 0)
+			(at 72.39 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3031,7 +3773,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 53.34 0)
+			(at 72.39 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3040,7 +3782,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 53.34 0)
+			(at 72.39 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3062,7 +3804,7 @@
 	)
 	(symbol
 		(lib_id "XPLDCL-00-0000-0000HC6AAAE7:XPLDCL-00-0000-0000HC6AAAE7")
-		(at 44.45 110.49 0)
+		(at 36.83 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3070,7 +3812,7 @@
 		(dnp no)
 		(uuid "78df87ad-fd08-4467-b14b-dde808ff177b")
 		(property "Reference" "LED15"
-			(at 62.23 105.41 0)
+			(at 54.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3078,7 +3820,7 @@
 			)
 		)
 		(property "Value" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 62.23 105.41 0)
+			(at 54.61 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3087,7 +3829,7 @@
 			)
 		)
 		(property "Footprint" "XPLDCL0000000000HC6AAAE7"
-			(at 76.2 205.41 0)
+			(at 68.58 190.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3097,7 +3839,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/x/XLamp-XPLDCL.pdf"
-			(at 76.2 305.41 0)
+			(at 68.58 290.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +3849,7 @@
 			)
 		)
 		(property "Description" "LED Lighting Color XLamp XP-L Red, Green, Blue, White - Warm (RGBW) 625nm Red, 528nm Green, 458nm Blue, 3000K White 1414 (3535 Metric)"
-			(at 44.45 110.49 0)
+			(at 36.83 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3858,7 @@
 			)
 		)
 		(property "Height" "2.83"
-			(at 76.2 505.41 0)
+			(at 68.58 490.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3126,7 +3868,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-XPLDCL00HC6AAAE7"
-			(at 76.2 605.41 0)
+			(at 68.58 590.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,7 +3878,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/XPLDCL-00-0000-0000HC6AAAE7?qs=i8QVZAFTkqRih4SMA%252BJLrw%3D%3D"
-			(at 76.2 705.41 0)
+			(at 68.58 690.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3888,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 76.2 805.41 0)
+			(at 68.58 790.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,7 +3898,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 76.2 905.41 0)
+			(at 68.58 890.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3945,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 129.54 64.77 0)
+		(at 130.81 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3212,7 +3954,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b104cf7-ceb3-4076-9d44-c505acbb34b0")
 		(property "Reference" "LED3"
-			(at 146.05 67.3099 0)
+			(at 147.32 54.6099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3221,7 +3963,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 146.05 68.5799 0)
+			(at 147.32 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3973,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 146.05 62.23 0)
+			(at 147.32 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3241,7 +3983,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 146.05 64.77 0)
+			(at 147.32 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3251,7 +3993,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 129.54 64.77 0)
+			(at 130.81 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3260,7 +4002,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 146.05 67.31 0)
+			(at 147.32 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3270,7 +4012,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 146.05 69.85 0)
+			(at 147.32 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +4022,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 146.05 72.39 0)
+			(at 147.32 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3290,7 +4032,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 146.05 74.93 0)
+			(at 147.32 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3300,7 +4042,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 146.05 77.47 0)
+			(at 147.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3310,7 +4052,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 146.05 80.01 0)
+			(at 147.32 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3339,7 +4081,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 166.37 110.49 0)
+		(at 167.64 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3348,7 +4090,7 @@
 		(fields_autoplaced yes)
 		(uuid "7b8b5156-a858-4442-a17e-3607dd011393")
 		(property "Reference" "LED10"
-			(at 182.88 113.0299 0)
+			(at 184.15 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3357,7 +4099,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 114.2999 0)
+			(at 184.15 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3367,7 +4109,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 182.88 107.95 0)
+			(at 184.15 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +4119,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 182.88 110.49 0)
+			(at 184.15 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3387,7 +4129,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 166.37 110.49 0)
+			(at 167.64 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +4138,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 182.88 113.03 0)
+			(at 184.15 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3406,7 +4148,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 182.88 115.57 0)
+			(at 184.15 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3416,7 +4158,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 182.88 118.11 0)
+			(at 184.15 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3426,7 +4168,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 182.88 120.65 0)
+			(at 184.15 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3436,7 +4178,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 182.88 123.19 0)
+			(at 184.15 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3446,7 +4188,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 125.73 0)
+			(at 184.15 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3475,7 +4217,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 73.66 0)
+		(at 203.2 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3484,7 +4226,7 @@
 		(fields_autoplaced yes)
 		(uuid "80ef847c-e551-4b61-825c-3db4c4e768ae")
 		(property "Reference" "#PWR052"
-			(at 201.93 80.01 0)
+			(at 203.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3493,7 +4235,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 78.74 0)
+			(at 203.2 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3501,7 +4243,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 73.66 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3510,7 +4252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 73.66 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3519,7 +4261,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 73.66 0)
+			(at 203.2 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3541,7 +4283,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 80.01 121.92 0)
+		(at 72.39 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3550,7 +4292,7 @@
 		(fields_autoplaced yes)
 		(uuid "842bd392-6fd6-46ff-92b2-0234f5c60948")
 		(property "Reference" "#PWR014"
-			(at 80.01 128.27 0)
+			(at 72.39 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3559,7 +4301,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 80.01 127 0)
+			(at 72.39 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3567,7 +4309,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 80.01 121.92 0)
+			(at 72.39 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3576,7 +4318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 80.01 121.92 0)
+			(at 72.39 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3585,7 +4327,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 80.01 121.92 0)
+			(at 72.39 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,7 +4349,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 76.2 0)
+		(at 36.83 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3616,7 +4358,7 @@
 		(fields_autoplaced yes)
 		(uuid "88a14024-d9e4-484f-93d4-dc5230430957")
 		(property "Reference" "#PWR09"
-			(at 44.45 82.55 0)
+			(at 36.83 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3625,7 +4367,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 81.28 0)
+			(at 36.83 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3633,7 +4375,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 76.2 0)
+			(at 36.83 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3642,7 +4384,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 76.2 0)
+			(at 36.83 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3651,7 +4393,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 76.2 0)
+			(at 36.83 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +4415,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 130.81 110.49 0)
+		(at 132.08 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3682,7 +4424,7 @@
 		(fields_autoplaced yes)
 		(uuid "88b46516-f464-4b20-80cb-a81d0e8f8644")
 		(property "Reference" "LED9"
-			(at 147.32 113.0299 0)
+			(at 148.59 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,7 +4433,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 147.32 114.2999 0)
+			(at 148.59 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3701,7 +4443,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 147.32 107.95 0)
+			(at 148.59 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3711,7 +4453,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 147.32 110.49 0)
+			(at 148.59 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3721,7 +4463,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 130.81 110.49 0)
+			(at 132.08 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,7 +4472,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 147.32 113.03 0)
+			(at 148.59 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3740,7 +4482,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 147.32 115.57 0)
+			(at 148.59 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3750,7 +4492,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 147.32 118.11 0)
+			(at 148.59 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3760,7 +4502,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 147.32 120.65 0)
+			(at 148.59 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3770,7 +4512,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 147.32 123.19 0)
+			(at 148.59 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3780,7 +4522,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 147.32 125.73 0)
+			(at 148.59 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3809,7 +4551,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 201.93 40.64 0)
+		(at 203.2 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3818,7 +4560,7 @@
 		(fields_autoplaced yes)
 		(uuid "896682ca-d52a-4c5d-9ee4-a11d759c9d0d")
 		(property "Reference" "LED2"
-			(at 218.44 43.1799 0)
+			(at 219.71 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3827,7 +4569,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 218.44 44.4499 0)
+			(at 219.71 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,7 +4579,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 218.44 38.1 0)
+			(at 219.71 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3847,7 +4589,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 218.44 40.64 0)
+			(at 219.71 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3857,7 +4599,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 201.93 40.64 0)
+			(at 203.2 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3866,7 +4608,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 218.44 43.18 0)
+			(at 219.71 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3876,7 +4618,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 218.44 45.72 0)
+			(at 219.71 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +4628,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 218.44 48.26 0)
+			(at 219.71 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3896,7 +4638,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 218.44 50.8 0)
+			(at 219.71 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3906,7 +4648,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 218.44 53.34 0)
+			(at 219.71 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3916,7 +4658,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 218.44 55.88 0)
+			(at 219.71 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3945,7 +4687,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 128.27 40.64 0)
+		(at 129.54 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3954,7 +4696,7 @@
 		(fields_autoplaced yes)
 		(uuid "89e2d394-c1bc-49c2-81d9-b27337441d6c")
 		(property "Reference" "LED0"
-			(at 144.78 43.1799 0)
+			(at 146.05 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3963,7 +4705,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 144.78 44.4499 0)
+			(at 146.05 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3973,7 +4715,7 @@
 			)
 		)
 		(property "Footprint" "Cree_White_LED:JR5050CWTEB50EB0000N0000001"
-			(at 144.78 38.1 0)
+			(at 146.05 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4725,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 144.78 40.64 0)
+			(at 146.05 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3993,7 +4735,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 128.27 40.64 0)
+			(at 129.54 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4002,7 +4744,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 144.78 43.18 0)
+			(at 146.05 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4012,7 +4754,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 144.78 45.72 0)
+			(at 146.05 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4022,7 +4764,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 144.78 48.26 0)
+			(at 146.05 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4032,7 +4774,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 144.78 50.8 0)
+			(at 146.05 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4042,7 +4784,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 144.78 53.34 0)
+			(at 146.05 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4052,7 +4794,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 144.78 55.88 0)
+			(at 146.05 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4081,7 +4823,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 166.37 95.25 0)
+		(at 167.64 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4090,7 +4832,7 @@
 		(fields_autoplaced yes)
 		(uuid "8eaa84e9-a42e-4580-9acc-105ddc885d9d")
 		(property "Reference" "#PWR054"
-			(at 166.37 101.6 0)
+			(at 167.64 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4099,7 +4841,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 166.37 100.33 0)
+			(at 167.64 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,7 +4849,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 95.25 0)
+			(at 167.64 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,7 +4858,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 95.25 0)
+			(at 167.64 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +4867,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 95.25 0)
+			(at 167.64 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4147,7 +4889,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 129.54 87.63 0)
+		(at 130.81 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4156,7 +4898,7 @@
 		(fields_autoplaced yes)
 		(uuid "95eac9cd-f1db-4f41-8e5e-89a6d65e3a58")
 		(property "Reference" "LED6"
-			(at 146.05 90.1699 0)
+			(at 147.32 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,7 +4907,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 146.05 91.4399 0)
+			(at 147.32 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4175,7 +4917,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 146.05 85.09 0)
+			(at 147.32 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4185,7 +4927,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 146.05 87.63 0)
+			(at 147.32 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4195,7 +4937,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 129.54 87.63 0)
+			(at 130.81 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4204,7 +4946,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 146.05 90.17 0)
+			(at 147.32 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4214,7 +4956,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 146.05 92.71 0)
+			(at 147.32 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4224,7 +4966,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 146.05 95.25 0)
+			(at 147.32 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4234,7 +4976,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 146.05 97.79 0)
+			(at 147.32 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4244,7 +4986,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 146.05 100.33 0)
+			(at 147.32 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4254,7 +4996,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 146.05 102.87 0)
+			(at 147.32 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +5025,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 53.34 0)
+		(at 36.83 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4292,7 +5034,7 @@
 		(fields_autoplaced yes)
 		(uuid "9b252261-e8f7-4327-8354-a8f908af8fec")
 		(property "Reference" "#PWR06"
-			(at 44.45 59.69 0)
+			(at 36.83 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4301,7 +5043,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 58.42 0)
+			(at 36.83 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4309,7 +5051,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 53.34 0)
+			(at 36.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4318,7 +5060,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 53.34 0)
+			(at 36.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4327,7 +5069,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 53.34 0)
+			(at 36.83 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4349,7 +5091,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 201.93 48.26 0)
+		(at 203.2 35.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4358,7 +5100,7 @@
 		(fields_autoplaced yes)
 		(uuid "9db1bf07-1420-44dc-b00f-05005495d67b")
 		(property "Reference" "#PWR049"
-			(at 201.93 54.61 0)
+			(at 203.2 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4367,7 +5109,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 201.93 53.34 0)
+			(at 203.2 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4375,7 +5117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 201.93 48.26 0)
+			(at 203.2 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4384,7 +5126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 48.26 0)
+			(at 203.2 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4393,7 +5135,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 201.93 48.26 0)
+			(at 203.2 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4415,7 +5157,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 129.54 72.39 0)
+		(at 130.81 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4424,7 +5166,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1d30d9c-90b6-400a-9966-f99681e7429b")
 		(property "Reference" "#PWR050"
-			(at 129.54 78.74 0)
+			(at 130.81 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4433,7 +5175,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 129.54 77.47 0)
+			(at 130.81 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4441,7 +5183,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 129.54 72.39 0)
+			(at 130.81 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4450,7 +5192,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 129.54 72.39 0)
+			(at 130.81 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4459,7 +5201,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 129.54 72.39 0)
+			(at 130.81 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4481,7 +5223,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 165.1 40.64 0)
+		(at 166.37 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4490,7 +5232,7 @@
 		(fields_autoplaced yes)
 		(uuid "a3516afb-b796-45b2-97b2-8fde3dfac784")
 		(property "Reference" "LED1"
-			(at 181.61 43.1799 0)
+			(at 182.88 30.4799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4499,7 +5241,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 181.61 44.4499 0)
+			(at 182.88 31.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4509,7 +5251,7 @@
 			)
 		)
 		(property "Footprint" "Cree_White_LED:JR5050CWTEB50EB0000N0000001"
-			(at 181.61 38.1 0)
+			(at 182.88 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4519,7 +5261,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 181.61 40.64 0)
+			(at 182.88 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4529,7 +5271,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 165.1 40.64 0)
+			(at 166.37 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4538,7 +5280,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 181.61 43.18 0)
+			(at 182.88 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4548,7 +5290,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 181.61 45.72 0)
+			(at 182.88 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4558,7 +5300,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 181.61 48.26 0)
+			(at 182.88 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4568,7 +5310,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 181.61 50.8 0)
+			(at 182.88 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4578,7 +5320,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 181.61 53.34 0)
+			(at 182.88 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +5330,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 181.61 55.88 0)
+			(at 182.88 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4617,7 +5359,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 166.37 66.04 0)
+		(at 167.64 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4626,7 +5368,7 @@
 		(fields_autoplaced yes)
 		(uuid "a9348a74-c0e7-4b49-9ff7-befc31d6905e")
 		(property "Reference" "LED4"
-			(at 182.88 68.5799 0)
+			(at 184.15 55.8799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4635,7 +5377,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 69.8499 0)
+			(at 184.15 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4645,7 +5387,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 182.88 63.5 0)
+			(at 184.15 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4655,7 +5397,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 182.88 66.04 0)
+			(at 184.15 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4665,7 +5407,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 166.37 66.04 0)
+			(at 167.64 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4674,7 +5416,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 182.88 68.58 0)
+			(at 184.15 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4684,7 +5426,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 182.88 71.12 0)
+			(at 184.15 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4694,7 +5436,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 182.88 73.66 0)
+			(at 184.15 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4704,7 +5446,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 182.88 76.2 0)
+			(at 184.15 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4714,7 +5456,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 182.88 78.74 0)
+			(at 184.15 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4724,7 +5466,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 182.88 81.28 0)
+			(at 184.15 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4753,7 +5495,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 130.81 118.11 0)
+		(at 132.08 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4762,7 +5504,7 @@
 		(fields_autoplaced yes)
 		(uuid "b6758c78-b8b3-4b96-87c2-cd4db0f5a05d")
 		(property "Reference" "#PWR056"
-			(at 130.81 124.46 0)
+			(at 132.08 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4771,7 +5513,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 130.81 123.19 0)
+			(at 132.08 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4779,7 +5521,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 130.81 118.11 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4788,7 +5530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 130.81 118.11 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4797,7 +5539,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 118.11 0)
+			(at 132.08 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4819,7 +5561,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 96.52 0)
+		(at 204.47 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4828,7 +5570,7 @@
 		(fields_autoplaced yes)
 		(uuid "d95648d3-f927-478d-986c-0f7148f33dfa")
 		(property "Reference" "#PWR055"
-			(at 203.2 102.87 0)
+			(at 204.47 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4837,7 +5579,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 101.6 0)
+			(at 204.47 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4845,7 +5587,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 96.52 0)
+			(at 204.47 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4854,7 +5596,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 96.52 0)
+			(at 204.47 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4863,7 +5605,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 96.52 0)
+			(at 204.47 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4885,7 +5627,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 118.11 0)
+		(at 204.47 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4894,7 +5636,7 @@
 		(fields_autoplaced yes)
 		(uuid "e034cbe7-adf4-493b-a209-a2c613183430")
 		(property "Reference" "#PWR058"
-			(at 203.2 124.46 0)
+			(at 204.47 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4903,7 +5645,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 123.19 0)
+			(at 204.47 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4911,7 +5653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 118.11 0)
+			(at 204.47 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4920,7 +5662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 118.11 0)
+			(at 204.47 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4929,7 +5671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 118.11 0)
+			(at 204.47 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4951,7 +5693,7 @@
 	)
 	(symbol
 		(lib_id "XPLDCL-00-0000-0000HC6AAAE7:XPLDCL-00-0000-0000HC6AAAE7")
-		(at 44.45 87.63 0)
+		(at 36.83 72.39 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4959,7 +5701,7 @@
 		(dnp no)
 		(uuid "ecf8e0d1-c23d-4a02-b289-addc5908d699")
 		(property "Reference" "LED14"
-			(at 62.23 82.55 0)
+			(at 54.61 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,7 +5709,7 @@
 			)
 		)
 		(property "Value" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 62.23 82.55 0)
+			(at 54.61 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4976,7 +5718,7 @@
 			)
 		)
 		(property "Footprint" "XPLDCL0000000000HC6AAAE7"
-			(at 76.2 182.55 0)
+			(at 68.58 167.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4986,7 +5728,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/x/XLamp-XPLDCL.pdf"
-			(at 76.2 282.55 0)
+			(at 68.58 267.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4996,7 +5738,7 @@
 			)
 		)
 		(property "Description" "LED Lighting Color XLamp XP-L Red, Green, Blue, White - Warm (RGBW) 625nm Red, 528nm Green, 458nm Blue, 3000K White 1414 (3535 Metric)"
-			(at 44.45 87.63 0)
+			(at 36.83 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5005,7 +5747,7 @@
 			)
 		)
 		(property "Height" "2.83"
-			(at 76.2 482.55 0)
+			(at 68.58 467.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5015,7 +5757,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-XPLDCL00HC6AAAE7"
-			(at 76.2 582.55 0)
+			(at 68.58 567.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5025,7 +5767,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/XPLDCL-00-0000-0000HC6AAAE7?qs=i8QVZAFTkqRih4SMA%252BJLrw%3D%3D"
-			(at 76.2 682.55 0)
+			(at 68.58 667.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5035,7 +5777,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 76.2 782.55 0)
+			(at 68.58 767.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5045,7 +5787,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "XPLDCL-00-0000-0000HC6AAAE7"
-			(at 76.2 882.55 0)
+			(at 68.58 867.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5092,7 +5834,7 @@
 	)
 	(symbol
 		(lib_id "JR5050CWT-E-B50EB0000-N0000001:JR5050CWT-E-B50EB0000-N0000001")
-		(at 203.2 110.49 0)
+		(at 204.47 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5101,7 +5843,7 @@
 		(fields_autoplaced yes)
 		(uuid "f3aece40-e69d-4fba-96bc-a00ff3b0dc42")
 		(property "Reference" "LED11"
-			(at 219.71 113.0299 0)
+			(at 220.98 100.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5110,7 +5852,7 @@
 			)
 		)
 		(property "Value" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 219.71 114.2999 0)
+			(at 220.98 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5120,7 +5862,7 @@
 			)
 		)
 		(property "Footprint" "JR5050CWTEB50EB0000N0000001"
-			(at 219.71 107.95 0)
+			(at 220.98 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5130,7 +5872,7 @@
 			)
 		)
 		(property "Datasheet" "https://downloads.cree-led.com/files/ds/j/JSeries-5050C.pdf"
-			(at 219.71 110.49 0)
+			(at 220.98 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,7 +5882,7 @@
 			)
 		)
 		(property "Description" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 203.2 110.49 0)
+			(at 204.47 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5891,7 @@
 			)
 		)
 		(property "Description_1" "Mid-Power LEDs - White JR5050C 6V E Class (5W)"
-			(at 219.71 113.03 0)
+			(at 220.98 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5159,7 +5901,7 @@
 			)
 		)
 		(property "Height" "0.95"
-			(at 219.71 115.57 0)
+			(at 220.98 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5169,7 +5911,7 @@
 			)
 		)
 		(property "Mouser Part Number" "941-JR5050CWTEB50EBN"
-			(at 219.71 118.11 0)
+			(at 220.98 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5179,7 +5921,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Cree-LED/JR5050CWT-E-B50EB0000-N0000001?qs=9vOqFld9vZVUMTGC19eA5A%3D%3D"
-			(at 219.71 120.65 0)
+			(at 220.98 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5189,7 +5931,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "CREE LED"
-			(at 219.71 123.19 0)
+			(at 220.98 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5199,7 +5941,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "JR5050CWT-E-B50EB0000-N0000001"
-			(at 219.71 125.73 0)
+			(at 220.98 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5228,7 +5970,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 44.45 99.06 0)
+		(at 36.83 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5237,7 +5979,7 @@
 		(fields_autoplaced yes)
 		(uuid "f5870e59-66b5-4bb0-b86d-828c3beeee9d")
 		(property "Reference" "#PWR011"
-			(at 44.45 105.41 0)
+			(at 36.83 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5246,7 +5988,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 44.45 104.14 0)
+			(at 36.83 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5254,7 +5996,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 44.45 99.06 0)
+			(at 36.83 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5263,7 +6005,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 44.45 99.06 0)
+			(at 36.83 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5272,7 +6014,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 44.45 99.06 0)
+			(at 36.83 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
