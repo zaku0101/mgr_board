@@ -1,0 +1,97 @@
+(footprint "HPIO530-4R7"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -23.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "11d73c86-c155-4d9f-9bc6-6172f8676df5")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "HPI0530-4R7"
+		(at 0 -22 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "25cb3029-1edb-47fb-a35c-064f8502718f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.tme.eu/Document/e149c9d15a89ae101acf458935804ce7/HPI0530.pdf"
+		(at 0 -23 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "19080671-2d68-4cf3-82c1-d12ca9bb0401")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -23 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d413a6d-02e5-438c-9a05-c5ba7fe4ec13")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start -0.3 -2.5)
+		(end 5.3 2.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b824d544-94f7-4bcf-90a4-d4c6cce6b850")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -20.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "e836e18f-3160-431b-bca7-b1a0c02ec7d1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" smd roundrect
+		(at 0 0)
+		(size 2 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "5f850231-ea6f-4371-aa3c-ef03830d8a5b")
+	)
+	(pad "2" smd roundrect
+		(at 5 0)
+		(size 2 2.8)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "1bab1a20-d4ff-4ec6-b6bf-f035b74cb2eb")
+	)
+	(embedded_fonts no)
+)
