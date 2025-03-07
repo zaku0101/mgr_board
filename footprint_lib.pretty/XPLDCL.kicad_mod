@@ -241,7 +241,7 @@
 		(uuid "ed6eed86-9208-4470-9870-03d2504ea9ba")
 	)
 	(embedded_fonts no)
-	(model "XPLDCL-00-0000-0000HC6AAAE7.stp"
+	(model "D:/repo/hw/3dmodel/XPLDCL-00-0000-0000HC6AAAE7.stp"
 		(offset
 			(xyz 0 0 0)
 		)

@@ -205,7 +205,7 @@
 		(uuid "581aa428-20c2-47e3-bbc8-371e13ec5d39")
 	)
 	(embedded_fonts no)
-	(model "JR5050CWT-E-B40EB0000-N0000001.stp"
+	(model "D:/repo/hw/3dmodel/JR5050CWT-E-B40EB0000-N0000001.stp"
 		(offset
 			(xyz 0 0 0)
 		)
