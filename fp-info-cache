@@ -1,4 +1,4 @@
-24744311917691515
+24749535724497002
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99519,6 +99519,20 @@ Varistor VF
 2
 2
 footprint_lib
+Bez_nazwy
+
+
+0
+0
+0
+footprint_lib
+DR125-470-R
+
+
+0
+2
+2
+footprint_lib
 HPIO530-4R7
 
 
@@ -99539,6 +99553,13 @@ Connector
 0
 13
 13
+footprint_lib
+SOP100P600X165-11N
+LK,10-Lead eSOIC
+Integrated Circuit
+0
+11
+11
 footprint_lib
 XPLDCL
 XPLDCL-00-0000-0000HC6AAAE7-3
