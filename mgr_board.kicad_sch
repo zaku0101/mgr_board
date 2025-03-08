@@ -3286,16 +3286,16 @@
 		(uuid "045f7022-0b2f-4d64-b9d7-2927e47f067f")
 	)
 	(junction
+		(at 27.94 153.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "07d864b9-bb6e-460a-bfaf-1c6048361a00")
+	)
+	(junction
 		(at 201.93 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a6e5b84-7520-4550-beb8-c2638f1ca86b")
-	)
-	(junction
-		(at 27.94 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "17a3daaf-8540-4e00-91b5-1d28d910e203")
 	)
 	(junction
 		(at 194.31 100.33)
@@ -3709,6 +3709,16 @@
 	)
 	(wire
 		(pts
+			(xy 24.13 156.21) (xy 27.94 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09a1d1a4-723a-4908-9859-e2f5f65e8298")
+	)
+	(wire
+		(pts
 			(xy 271.78 110.49) (xy 260.35 110.49)
 		)
 		(stroke
@@ -3936,16 +3946,6 @@
 			(type default)
 		)
 		(uuid "1f83f38d-0da6-4dc9-85d0-a033a34bc827")
-	)
-	(wire
-		(pts
-			(xy 25.4 153.67) (xy 27.94 153.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2171f660-df2f-4c88-a67c-64be31692df3")
 	)
 	(wire
 		(pts
@@ -4346,16 +4346,6 @@
 			(type default)
 		)
 		(uuid "4c85371b-f68d-4258-97ef-f4a3f4914100")
-	)
-	(wire
-		(pts
-			(xy 27.94 156.21) (xy 25.4 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ce2e2c4-7ee3-43eb-8431-307d9eba72bd")
 	)
 	(wire
 		(pts
@@ -5796,6 +5786,16 @@
 			(type default)
 		)
 		(uuid "f54b1ef7-8615-4e97-920d-5b60f6271168")
+	)
+	(wire
+		(pts
+			(xy 24.13 153.67) (xy 27.94 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f5be8b6d-0a8a-4e8b-b0b2-f20201143b83")
 	)
 	(wire
 		(pts
@@ -8426,7 +8426,8 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Screw_Terminal:Screw_Terminal_2_P5.00mm")
-		(at 21.59 154.94 180)
+		(at 20.32 154.94 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8434,7 +8435,7 @@
 		(dnp no)
 		(uuid "266d39ba-19fd-41d7-a747-29c41ca0d815")
 		(property "Reference" "J1"
-			(at 17.78 156.2101 0)
+			(at 16.51 153.6699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8443,7 +8444,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_2_P5.00mm"
-			(at 38.608 147.32 0)
+			(at 37.338 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8453,7 +8454,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 20.32 148.59 0)
+			(at 19.05 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8462,7 +8463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 21.59 154.94 0)
+			(at 20.32 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8471,7 +8472,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 21.59 154.94 0)
+			(at 20.32 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)

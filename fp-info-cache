@@ -1,4 +1,4 @@
-24749536000171581
+24751277389755235
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -99546,6 +99546,13 @@ LED
 0
 3
 3
+footprint_lib
+LM2596 DC-DC module
+
+
+0
+4
+4
 footprint_lib
 MCSPQ08ASGTR
 MCSP-Q-08-A-SG-T/R-4
