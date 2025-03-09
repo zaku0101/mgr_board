@@ -29,11 +29,30 @@
       "zones": true
     },
     "visible_items": [
+      "vias",
+      "footprint_text",
+      "footprint_anchors",
       "ratsnest",
       "grid",
+      "footprints_front",
+      "footprints_back",
+      "footprint_values",
+      "footprint_references",
+      "tracks",
+      "drc_errors",
+      "drawing_sheet",
+      "bitmaps",
+      "pads",
+      "zones",
+      "drc_warnings",
+      "locked_item_shadows",
+      "conflict_shadows",
       "shapes"
     ],
+<<<<<<< HEAD
 
+=======
+>>>>>>> 01245d5 (final board)
     "visible_layers": "00000000_00000000_00000000_8200aaa7",
     "zone_display_mode": 0
   },
