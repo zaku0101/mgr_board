@@ -1,0 +1,143 @@
+(footprint "LM2596 DC-DC module"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 -5.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "7cce85ff-0081-4058-a1e2-d33a54671c3a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "LM2596 DC-DC module"
+		(at 0 -4 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "0f2309eb-ccb0-436a-91ad-256a55125e5a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 -5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5410b0dd-d6f9-4f19-9972-7c83030e3ab8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 -5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7d3115d8-ffe1-450f-bc3f-a3714bc2d25c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_rect
+		(start 0 0)
+		(end 44 22)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "38e68e1e-e389-4d08-ad64-9434a8bc0361")
+	)
+	(fp_rect
+		(start 0 18)
+		(end 4 22)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b57e4a9c-dcf0-4ee6-8abd-6911432fcf5b")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -2.5 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "ca4baaa9-0e5c-44dc-9837-c5a54ccdbfda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole roundrect
+		(at 2 2.25)
+		(size 4 4)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "698eb0c3-d931-4f99-b252-ffd13d96e87f")
+	)
+	(pad "2" thru_hole roundrect
+		(at 2 19.75)
+		(size 4 4)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "d51cfb62-dc1c-4ff7-989f-f7c4524de1f0")
+	)
+	(pad "3" thru_hole roundrect
+		(at 42 2.25)
+		(size 4 4)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "157754e8-9a0a-436e-a7e8-b9645c1ce695")
+	)
+	(pad "4" thru_hole roundrect
+		(at 42 19.75)
+		(size 4 4)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(roundrect_rratio 0.15)
+		(thermal_bridge_angle 45)
+		(uuid "d97257bc-9d3d-4add-aa91-68f56b8ffa25")
+	)
+	(embedded_fonts no)
+	(model "D:/repo/hw/3dmodel/User Library-BULVACK LM2596 DC-DC 1_25V-30V 3A-1.step"
+		(offset
+			(xyz 22 -11 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -0 -0 -0)
+		)
+	)
+)
