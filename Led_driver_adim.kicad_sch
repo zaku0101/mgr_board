@@ -1897,6 +1897,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 157.48 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "31770102-ccfc-43b4-9d31-f8cc4a5e5992")
 		)
@@ -1978,6 +1987,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 93.98 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C96446"
 			(at 93.98 69.85 0)
 			(effects
 				(font
@@ -2298,6 +2316,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C146400"
+			(at 119.38 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "c5887ddf-d1d1-4d8e-a186-f47c8f214b30")
 		)
@@ -2404,6 +2431,15 @@
 			)
 		)
 		(property "Description" "1/4W Resistor"
+			(at 81.28 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22975"
 			(at 81.28 87.63 0)
 			(effects
 				(font
@@ -2842,6 +2878,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C5127262"
+			(at 171.45 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3f793da5-1d34-44f0-97e5-ef0f002341a9")
 		)
@@ -2923,6 +2968,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 100.33 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C19666"
 			(at 100.33 69.85 0)
 			(effects
 				(font
@@ -3020,6 +3074,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C23175"
+			(at 111.76 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9b21dcaf-cea0-490c-ad3a-54e34251d87b")
 		)
@@ -3108,6 +3171,14 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "LCSC" ""
+			(at 175.26 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -3264,6 +3335,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C8678"
+			(at 166.37 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3433,6 +3513,15 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 111.76 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C15849"
 			(at 111.76 86.36 0)
 			(effects
 				(font
@@ -3616,6 +3705,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C14663"
+			(at 175.26 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6fc848b6-ea92-4d7e-ad40-0f59e07f3f35")
 		)
@@ -3695,6 +3793,15 @@
 			)
 		)
 		(property "Description" "1/4W Resistor"
+			(at 81.28 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
 			(at 81.28 74.93 0)
 			(effects
 				(font
