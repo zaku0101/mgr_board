@@ -5,25 +5,45 @@
 	(uuid "d5c68ba4-cbf6-419d-baff-3035488d624b")
 	(paper "A4")
 	(lib_symbols)
-	(text "If RGB diodes used please solder R260 resistor as current limiter.\n"
-		(exclude_from_sim no)
-		(at 145.542 18.034 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "000d63ae-5824-4adf-8eb4-ae09d460f85e")
-	)
 	(wire
 		(pts
-			(xy 107.95 69.85) (xy 113.03 69.85)
+			(xy 170.18 101.6) (xy 165.1 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "25d819ee-0dac-45fb-82fa-ad2eedb3a791")
+		(uuid "04a2dc3a-ca75-4076-ae97-33ce32021015")
+	)
+	(wire
+		(pts
+			(xy 170.18 66.04) (xy 165.1 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "252a7a40-f97c-467d-b21a-c2baa8cb95c1")
+	)
+	(wire
+		(pts
+			(xy 142.24 68.58) (xy 144.78 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "272837f9-e1c4-44e3-9b68-3a2d5541e1b3")
+	)
+	(wire
+		(pts
+			(xy 170.18 104.14) (xy 165.1 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f6ed4bf-a067-4680-9c73-eada5a9de7d1")
 	)
 	(wire
 		(pts
@@ -37,63 +57,33 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 100.33) (xy 111.76 100.33)
+			(xy 115.57 83.82) (xy 111.76 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c52e4a4-e3ef-486d-a52e-573003ce6cec")
+		(uuid "3ed7c8ca-5300-43a3-bf97-7a9933c21192")
 	)
 	(wire
 		(pts
-			(xy 153.67 67.31) (xy 157.48 67.31)
+			(xy 170.18 82.55) (xy 165.1 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "687a1de2-3c5d-4299-83b3-afb5b7f49d09")
+		(uuid "55e5d1cf-33dc-436f-8013-6f37eaef5f32")
 	)
 	(wire
 		(pts
-			(xy 107.95 102.87) (xy 111.76 102.87)
+			(xy 170.18 68.58) (xy 165.1 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6f2eec58-5846-4c4c-a5df-e01492bb00a8")
-	)
-	(wire
-		(pts
-			(xy 134.62 68.58) (xy 138.43 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72a57804-9b83-45b9-880a-82c2e04c20c9")
-	)
-	(wire
-		(pts
-			(xy 107.95 85.09) (xy 111.76 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "88df0fdb-0525-45e3-baf1-ee0aea5cffc2")
-	)
-	(wire
-		(pts
-			(xy 152.4 104.14) (xy 156.21 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a49fc843-afec-4b55-9cb9-5704d3e9e59b")
+		(uuid "9b6e6967-1fce-424b-9879-8abcd2689c6c")
 	)
 	(wire
 		(pts
@@ -107,27 +97,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 82.55) (xy 156.21 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "acc2ebf7-868e-45b0-b46c-38e5a0b3e1fa")
-	)
-	(wire
-		(pts
-			(xy 107.95 82.55) (xy 111.76 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae3a6aad-bd4a-45f7-8416-f4a57d308489")
-	)
-	(wire
-		(pts
-			(xy 134.62 102.87) (xy 137.16 102.87)
+			(xy 142.24 102.87) (xy 144.78 102.87)
 		)
 		(stroke
 			(width 0)
@@ -137,17 +107,27 @@
 	)
 	(wire
 		(pts
-			(xy 153.67 69.85) (xy 157.48 69.85)
+			(xy 115.57 81.28) (xy 111.76 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7ef3162-66df-4611-afe1-ec7a972b1dc2")
+		(uuid "b1dff782-fda9-4b16-aef8-2a1b78ef0986")
 	)
 	(wire
 		(pts
-			(xy 134.62 83.82) (xy 137.16 83.82)
+			(xy 115.57 100.33) (xy 111.76 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b67ba8ba-aa55-44cf-a4ce-2df798086080")
+	)
+	(wire
+		(pts
+			(xy 142.24 83.82) (xy 144.78 83.82)
 		)
 		(stroke
 			(width 0)
@@ -157,13 +137,43 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 85.09) (xy 156.21 85.09)
+			(xy 170.18 85.09) (xy 165.1 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d6e2d45b-1615-44c6-af46-b1b9d5675eb6")
+		(uuid "c92fdc73-e1e9-4310-aabe-fc4faf1730ab")
+	)
+	(wire
+		(pts
+			(xy 115.57 102.87) (xy 111.76 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3f71163-7b87-40cf-b710-11c05dd2d2f1")
+	)
+	(wire
+		(pts
+			(xy 115.57 66.04) (xy 111.76 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de300794-ea17-4d17-9489-fc1127ca04a7")
+	)
+	(wire
+		(pts
+			(xy 111.76 68.58) (xy 115.57 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80107d4-b2a9-4451-8496-f875c149597c")
 	)
 	(wire
 		(pts
@@ -174,48 +184,6 @@
 			(type default)
 		)
 		(uuid "f14cde5d-b0e3-41e6-b749-9c1d6515b869")
-	)
-	(wire
-		(pts
-			(xy 107.95 67.31) (xy 113.03 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4d616a6-7aba-4d41-b52c-6f66357485bd")
-	)
-	(wire
-		(pts
-			(xy 152.4 101.6) (xy 156.21 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7c389c9-4282-4efe-98c0-fc2e1fa53950")
-	)
-	(hierarchical_label "LED_11"
-		(shape output)
-		(at 156.21 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0934feec-11c0-4ddf-ac2a-f9374c9b929e")
-	)
-	(hierarchical_label "LED_6"
-		(shape output)
-		(at 113.03 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "10edb33f-2e22-4637-99b8-d30b700dec18")
 	)
 	(hierarchical_label "ADIM_2"
 		(shape input)
@@ -228,20 +196,9 @@
 		)
 		(uuid "1297d197-f632-4e3e-a0e9-c4580b8f5025")
 	)
-	(hierarchical_label "I_LED_7"
-		(shape output)
-		(at 157.48 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "15fbb36f-0506-44de-9a62-f745a61685d5")
-	)
 	(hierarchical_label "ADIM_5"
 		(shape input)
-		(at 134.62 102.87 180)
+		(at 142.24 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -250,20 +207,20 @@
 		)
 		(uuid "19b3c7c6-90c7-4b69-8dc6-af44c770866d")
 	)
-	(hierarchical_label "I_LED_8"
+	(hierarchical_label "LED_CURR_6"
 		(shape output)
-		(at 111.76 85.09 0)
+		(at 115.57 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "46258876-1369-4101-a0ae-a4a17713ee3f")
+		(uuid "597b23af-7bda-40de-a3b3-e3dfbd83745d")
 	)
 	(hierarchical_label "ADIM_3"
 		(shape input)
-		(at 134.62 83.82 180)
+		(at 142.24 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -283,27 +240,27 @@
 		)
 		(uuid "6c2a95ec-770e-43f4-a72f-67a9815b5c7a")
 	)
-	(hierarchical_label "I_LED_11"
+	(hierarchical_label "LED_CURR_11"
 		(shape output)
-		(at 156.21 104.14 0)
+		(at 170.18 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "7bf0ee7c-aa19-4d31-8b4e-684053ccfb02")
+		(uuid "9814be3f-fdc9-4c8e-9bb1-10ddefea00f8")
 	)
-	(hierarchical_label "I_LED_10"
+	(hierarchical_label "LED_CURR_7"
 		(shape output)
-		(at 111.76 102.87 0)
+		(at 170.18 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "7f88bc36-a104-4df5-88ec-efec9005e117")
+		(uuid "9b76b284-3393-481e-9858-c5994fa9fc38")
 	)
 	(hierarchical_label "ADIM_4"
 		(shape input)
@@ -316,64 +273,97 @@
 		)
 		(uuid "9c1efdff-045c-494e-b530-7c9f66063643")
 	)
-	(hierarchical_label "I_LED_6"
+	(hierarchical_label "LED_LOAD_7"
 		(shape output)
-		(at 113.03 69.85 0)
+		(at 170.18 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "a3a357cb-ca8a-4388-997f-3281445cebc4")
+		(uuid "a3cd330d-e767-40fc-8bd4-b5c7c6fc78e4")
 	)
-	(hierarchical_label "LED_8"
+	(hierarchical_label "LED_LOAD_6"
 		(shape output)
-		(at 111.76 82.55 0)
+		(at 115.57 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "be6e97c7-3a8f-489c-bd05-813ce15e52f1")
+		(uuid "b755d411-a4da-4a0f-a574-aacb134dfb2d")
 	)
-	(hierarchical_label "LED_9"
+	(hierarchical_label "LED_LOAD_8"
 		(shape output)
-		(at 156.21 82.55 0)
+		(at 115.57 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "c79b0ce6-e650-4bde-bf7c-74712e6840c1")
+		(uuid "c0a1189a-9c10-404e-8f21-0e86c2c8e51e")
 	)
-	(hierarchical_label "LED_10"
+	(hierarchical_label "LED_CURR_8"
 		(shape output)
-		(at 111.76 100.33 0)
+		(at 115.57 83.82 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "cfa83e3f-fa75-4945-959a-c6c9430542ec")
+		(uuid "c4a193f7-87a4-4fa4-bda3-f8e79275d820")
 	)
-	(hierarchical_label "I_LED_9"
+	(hierarchical_label "LED_CURR_9"
 		(shape output)
-		(at 156.21 85.09 0)
+		(at 170.18 85.09 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f1c80492-3124-43ee-a5d3-4dd5faaab026")
+		(uuid "c7979523-73da-4c0b-b614-baef80fd9a60")
+	)
+	(hierarchical_label "LED_LOAD_10"
+		(shape output)
+		(at 115.57 100.33 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c97eba05-1fda-4e63-9170-89bf787f7e78")
+	)
+	(hierarchical_label "LED_LOAD_11"
+		(shape output)
+		(at 170.18 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e3ec6116-d923-4c90-a111-0f21be4d1201")
+	)
+	(hierarchical_label "LED_CURR_10"
+		(shape output)
+		(at 115.57 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef7bada2-cca8-4200-808b-c533cd891d74")
 	)
 	(hierarchical_label "ADIM_1"
 		(shape input)
-		(at 134.62 68.58 180)
+		(at 142.24 68.58 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -382,20 +372,20 @@
 		)
 		(uuid "f4c46fb2-79e0-4211-b202-0aca301203d2")
 	)
-	(hierarchical_label "LED_7"
+	(hierarchical_label "LED_LOAD_9"
 		(shape output)
-		(at 157.48 67.31 0)
+		(at 170.18 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f8a4e113-17e5-4c4c-8abe-8ed54ba0b4d7")
+		(uuid "f6454db6-7cc6-4b1f-bd24-242f99f88b39")
 	)
 	(sheet
 		(at 92.71 96.52)
-		(size 15.24 8.89)
+		(size 19.05 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -428,26 +418,6 @@
 				(hide yes)
 			)
 		)
-		(pin "I_LED" output
-			(at 107.95 102.87 0)
-			(uuid "b8202dad-0e3f-4c88-8fdb-475868f63425")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 107.95 100.33 0)
-			(uuid "6a72e065-e496-4b9f-ba52-4675f654799b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADIM" input
 			(at 92.71 101.6 180)
 			(uuid "45ee9d0a-67a0-42b8-bd49-24f390e304bc")
@@ -456,6 +426,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 111.76 102.87 0)
+			(uuid "4e0451cb-fee9-4252-bc53-d6b74e3d9e0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 111.76 100.33 0)
+			(uuid "780e207e-89a5-414d-a7ea-533886f0e3f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -468,7 +458,7 @@
 	)
 	(sheet
 		(at 92.71 78.74)
-		(size 15.24 8.89)
+		(size 19.05 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -501,26 +491,6 @@
 				(hide yes)
 			)
 		)
-		(pin "I_LED" output
-			(at 107.95 85.09 0)
-			(uuid "35922d51-61f3-4064-85d7-3197b3de4a69")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 107.95 82.55 0)
-			(uuid "a8dd95df-d261-48a1-9752-91f96c526564")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADIM" input
 			(at 92.71 83.82 180)
 			(uuid "784e5d8d-4f80-41e2-9c8e-2a378cb1923b")
@@ -529,6 +499,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 111.76 83.82 0)
+			(uuid "53c84465-2816-4f88-a987-0c5c13c1ce26")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 111.76 81.28 0)
+			(uuid "3cd58f1a-1873-48a4-a18b-9c7207efe3e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -541,7 +531,7 @@
 	)
 	(sheet
 		(at 92.71 63.5)
-		(size 15.24 8.89)
+		(size 19.05 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -574,26 +564,6 @@
 				(hide yes)
 			)
 		)
-		(pin "I_LED" output
-			(at 107.95 69.85 0)
-			(uuid "9837cf04-f1b6-4ddd-ba3b-f6a30d6cf363")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 107.95 67.31 0)
-			(uuid "410dc48c-ac1a-4402-968f-d6195b7fa3d0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADIM" input
 			(at 92.71 68.58 180)
 			(uuid "016d66d7-ecbb-4edd-b8c5-55c05a65d375")
@@ -602,6 +572,26 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 111.76 68.58 0)
+			(uuid "575bdb1e-bf77-467f-9484-e2ad554299ec")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 111.76 66.04 0)
+			(uuid "f7723011-eed4-4672-b751-9a52fbb3f26e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -613,8 +603,8 @@
 		)
 	)
 	(sheet
-		(at 138.43 63.5)
-		(size 15.24 8.89)
+		(at 144.78 63.5)
+		(size 20.32 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -629,7 +619,7 @@
 		)
 		(uuid "7580c989-93a9-4b99-b4dd-1523b56c60e0")
 		(property "Sheetname" "LED_DRIVER_ADIM_2"
-			(at 138.43 62.7884 0)
+			(at 144.78 62.7884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -638,7 +628,7 @@
 			)
 		)
 		(property "Sheetfile" "Led_driver_adim.kicad_sch"
-			(at 138.43 72.9746 0)
+			(at 144.78 72.9746 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -647,34 +637,34 @@
 				(hide yes)
 			)
 		)
-		(pin "I_LED" output
-			(at 153.67 69.85 0)
-			(uuid "032678d6-5273-4848-9ff9-f489758a312c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 153.67 67.31 0)
-			(uuid "57a096fb-f0f3-455e-9430-629a5357e07f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADIM" input
-			(at 138.43 68.58 180)
+			(at 144.78 68.58 180)
 			(uuid "5ac1cd5a-5eea-4691-a999-1797c0afc6e4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 165.1 68.58 0)
+			(uuid "5f42c35b-54cf-46cb-9f62-5245a30fa217")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 165.1 66.04 0)
+			(uuid "302128f3-0a52-4381-8957-bae0f587af2d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -686,8 +676,8 @@
 		)
 	)
 	(sheet
-		(at 137.16 78.74)
-		(size 15.24 8.89)
+		(at 144.78 78.74)
+		(size 20.32 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -702,7 +692,7 @@
 		)
 		(uuid "d1bfb720-7cd7-4d83-870c-9d62b31f375d")
 		(property "Sheetname" "LED_DRIVER_ADIM_4"
-			(at 137.16 78.0284 0)
+			(at 144.78 78.0284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -711,42 +701,43 @@
 			)
 		)
 		(property "Sheetfile" "Led_driver_adim.kicad_sch"
-			(at 137.16 88.2146 0)
+			(at 144.78 88.2146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(pin "I_LED" output
-			(at 152.4 85.09 0)
-			(uuid "22f3e3d8-8572-4522-9fba-edecd635eab0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 152.4 82.55 0)
-			(uuid "63d86694-ac29-4c1c-a2a1-4b3b4497fcc3")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
+				(hide yes)
 			)
 		)
 		(pin "ADIM" input
-			(at 137.16 83.82 180)
+			(at 144.78 83.82 180)
 			(uuid "f58fb468-a0a6-46fb-ab98-cda01dba5075")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 165.1 85.09 0)
+			(uuid "deac2f8f-287b-4f79-83a7-fb7da47761e5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 165.1 82.55 0)
+			(uuid "38416313-b711-4a77-a8f9-94585ee85252")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -758,8 +749,8 @@
 		)
 	)
 	(sheet
-		(at 137.16 97.79)
-		(size 15.24 8.89)
+		(at 144.78 97.79)
+		(size 20.32 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -774,7 +765,7 @@
 		)
 		(uuid "e1ae6168-d928-42f7-a8a0-d78ccd7ebaeb")
 		(property "Sheetname" "LED_DRIVER_ADIM_6"
-			(at 137.16 97.0784 0)
+			(at 144.78 97.0784 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -783,7 +774,7 @@
 			)
 		)
 		(property "Sheetfile" "Led_driver_adim.kicad_sch"
-			(at 137.16 107.2646 0)
+			(at 144.78 107.2646 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -792,34 +783,34 @@
 				(hide yes)
 			)
 		)
-		(pin "I_LED" output
-			(at 152.4 104.14 0)
-			(uuid "86c276b2-4dc3-4885-84da-bd1bfa72ca51")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED" output
-			(at 152.4 101.6 0)
-			(uuid "56e35640-7ec0-472d-842a-40df026df324")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADIM" input
-			(at 137.16 102.87 180)
+			(at 144.78 102.87 180)
 			(uuid "7fe0e5f3-0625-4559-9b2d-0938fb7d1e4e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "LED_CURR" output
+			(at 165.1 104.14 0)
+			(uuid "c67bb6f9-0bb6-4867-bbcc-04f1d092f3d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_LOAD" output
+			(at 165.1 101.6 0)
+			(uuid "cf150100-8fdc-4974-b3dc-8f8664e6bc70")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

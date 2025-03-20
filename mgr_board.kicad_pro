@@ -713,7 +713,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "documents/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -796,6 +796,10 @@
     [
       "e1ae6168-d928-42f7-a8a0-d78ccd7ebaeb",
       "LED_DRIVER_ADIM_6"
+    ],
+    [
+      "af424652-0194-49e8-8dcb-6985df2827ad",
+      "ADCs"
     ]
   ],
   "text_variables": {}
