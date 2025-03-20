@@ -1343,16 +1343,22 @@
 		)
 	)
 	(junction
+		(at 236.22 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09640496-02b6-4072-affe-e3c3bfaf7892")
+	)
+	(junction
 		(at 111.76 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "13f7f899-d4ee-4d76-9ab8-1242021a6f83")
 	)
 	(junction
-		(at 210.82 115.57)
+		(at 214.63 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "398cc9f2-1347-4a63-b755-cd1951f7a38d")
+		(uuid "234b5bb6-da1a-4a88-a7c9-28649499c87c")
 	)
 	(junction
 		(at 196.85 55.88)
@@ -1379,12 +1385,6 @@
 		(uuid "6d48aa69-9d6c-4522-937a-b9e294b76804")
 	)
 	(junction
-		(at 213.36 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "7b681ec3-565e-456b-8a27-032453933c4b")
-	)
-	(junction
 		(at 105.41 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1397,10 +1397,22 @@
 		(uuid "8978395c-526c-450f-a917-d3cf13c73112")
 	)
 	(junction
+		(at 209.55 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a535be81-10ca-4293-866e-74e8445880c4")
+	)
+	(junction
 		(at 113.03 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bf303cf0-b9d5-4679-8d68-593453d4b44c")
+	)
+	(junction
+		(at 224.79 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2e781ec-bd56-47da-af49-ad800679523f")
 	)
 	(junction
 		(at 191.77 50.8)
@@ -1484,6 +1496,16 @@
 	)
 	(wire
 		(pts
+			(xy 209.55 48.26) (xy 209.55 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0027a655-87b7-4347-83ec-257f0fc2799f")
+	)
+	(wire
+		(pts
 			(xy 114.3 40.64) (xy 111.76 40.64)
 		)
 		(stroke
@@ -1494,7 +1516,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 113.03) (xy 194.31 113.03)
+			(xy 187.96 113.03) (xy 214.63 113.03)
 		)
 		(stroke
 			(width 0)
@@ -1524,7 +1546,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 53.34) (xy 194.31 53.34)
+			(xy 212.09 53.34) (xy 209.55 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1624,13 +1646,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 115.57) (xy 210.82 115.57)
+			(xy 190.5 115.57) (xy 236.22 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3c7f4dc4-c35d-40c4-81a0-a7041074064d")
+	)
+	(wire
+		(pts
+			(xy 209.55 53.34) (xy 194.31 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca33aa3-2ae8-4209-ba8b-b9785daa30c4")
 	)
 	(wire
 		(pts
@@ -1674,7 +1706,7 @@
 	)
 	(wire
 		(pts
-			(xy 196.85 55.88) (xy 213.36 55.88)
+			(xy 196.85 55.88) (xy 224.79 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1834,6 +1866,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 113.03) (xy 219.71 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "968decdc-9073-4149-8524-ed3491d53cef")
+	)
+	(wire
+		(pts
 			(xy 111.76 107.95) (xy 115.57 107.95)
 		)
 		(stroke
@@ -1944,7 +1986,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 115.57) (xy 215.9 115.57)
+			(xy 236.22 115.57) (xy 241.3 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1964,7 +2006,7 @@
 	)
 	(wire
 		(pts
-			(xy 213.36 55.88) (xy 219.71 55.88)
+			(xy 224.79 55.88) (xy 231.14 55.88)
 		)
 		(stroke
 			(width 0)
@@ -2217,7 +2259,7 @@
 	)
 	(hierarchical_label "ADC1_START"
 		(shape input)
-		(at 215.9 115.57 0)
+		(at 241.3 115.57 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2327,7 +2369,7 @@
 	)
 	(hierarchical_label "ADC0_CS"
 		(shape input)
-		(at 195.58 53.34 0)
+		(at 212.09 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2360,7 +2402,7 @@
 	)
 	(hierarchical_label "ADC0_START"
 		(shape input)
-		(at 219.71 55.88 0)
+		(at 231.14 55.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2371,7 +2413,7 @@
 	)
 	(hierarchical_label "ADC1_CS"
 		(shape input)
-		(at 194.31 113.03 0)
+		(at 219.71 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2426,7 +2468,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Resistors:Resistor")
-		(at 213.36 52.07 90)
+		(at 224.79 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2435,7 +2477,7 @@
 		(fields_autoplaced yes)
 		(uuid "06c2e9e1-18c0-4e46-b96f-9802446fcc9e")
 		(property "Reference" "R70"
-			(at 215.9 50.7999 90)
+			(at 227.33 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2444,7 +2486,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 215.9 53.3399 90)
+			(at 227.33 53.3399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2453,7 +2495,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 217.678 51.181 0)
+			(at 229.108 51.181 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2504,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 51.562 0)
+			(at 224.79 51.562 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,7 +2513,7 @@
 			)
 		)
 		(property "Description" "1/4W Resistor"
-			(at 213.36 52.07 0)
+			(at 224.79 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2480,7 +2522,7 @@
 			)
 		)
 		(property "LCSC" "C25804"
-			(at 213.36 52.07 0)
+			(at 224.79 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,6 +3133,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 214.63 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "19f2ef69-e60b-4c2a-8d99-7c5c89d2f900")
+		(property "Reference" "#PWR0265"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 214.63 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 214.63 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "06e03ea9-1d97-4d71-9888-ef92c83f98fd")
+		)
+		(instances
+			(project "mgr_board"
+				(path "/14d3b6cb-e4ae-41db-89eb-e86b07bc47b0/af424652-0194-49e8-8dcb-6985df2827ad"
+					(reference "#PWR0265")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_SL_Resistors:Resistor")
 		(at 101.6 106.68 90)
 		(unit 1)
@@ -3314,7 +3422,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 210.82 107.95 0)
+		(at 236.22 107.95 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3323,7 +3431,7 @@
 		(fields_autoplaced yes)
 		(uuid "2712e73f-79e4-4b5b-bca0-0df6527da831")
 		(property "Reference" "#PWR0227"
-			(at 210.82 111.76 0)
+			(at 236.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3440,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 210.82 102.87 0)
+			(at 236.22 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3340,7 +3448,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 210.82 107.95 0)
+			(at 236.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3349,7 +3457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 107.95 0)
+			(at 236.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3358,7 +3466,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 210.82 107.95 0)
+			(at 236.22 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3440,6 +3548,84 @@
 			(project "mgr_board"
 				(path "/14d3b6cb-e4ae-41db-89eb-e86b07bc47b0/af424652-0194-49e8-8dcb-6985df2827ad"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_SL_Resistors:Resistor")
+		(at 209.55 44.45 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2bd3831a-296f-4032-a0da-ee915234750f")
+		(property "Reference" "R3"
+			(at 205.486 42.926 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 204.978 45.212 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 213.868 43.561 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 43.942 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1/4W Resistor"
+			(at 209.55 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 209.55 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7504ad17-127c-4784-965b-8ea9cf8d8e92")
+		)
+		(pin "1"
+			(uuid "eb15d233-bacb-4e9a-99b4-9860daae5c4d")
+		)
+		(instances
+			(project "mgr_board"
+				(path "/14d3b6cb-e4ae-41db-89eb-e86b07bc47b0/af424652-0194-49e8-8dcb-6985df2827ad"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -4202,6 +4388,84 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_SL_Resistors:Resistor")
+		(at 214.63 109.22 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "507ef708-1e24-4f2f-b57e-6f1bb54ff425")
+		(property "Reference" "R57"
+			(at 208.788 107.442 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 208.28 109.728 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 218.948 108.331 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 108.712 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1/4W Resistor"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25804"
+			(at 214.63 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e7de1e0a-ee63-41a5-b2f2-bdfce04be60c")
+		)
+		(pin "1"
+			(uuid "a015fd39-f2da-470f-a99d-195c384a9066")
+		)
+		(instances
+			(project "mgr_board"
+				(path "/14d3b6cb-e4ae-41db-89eb-e86b07bc47b0/af424652-0194-49e8-8dcb-6985df2827ad"
+					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 91.44 92.71 0)
 		(unit 1)
@@ -4553,7 +4817,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 213.36 48.26 0)
+		(at 224.79 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4562,7 +4826,7 @@
 		(fields_autoplaced yes)
 		(uuid "648b850e-1826-4c08-8497-90cc1f1af409")
 		(property "Reference" "#PWR0224"
-			(at 213.36 52.07 0)
+			(at 224.79 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4571,7 +4835,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 213.36 43.18 0)
+			(at 224.79 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4579,7 +4843,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 213.36 48.26 0)
+			(at 224.79 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4588,7 +4852,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 213.36 48.26 0)
+			(at 224.79 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4597,7 +4861,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 213.36 48.26 0)
+			(at 224.79 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6569,6 +6833,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3V3")
+		(at 209.55 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d329a9e8-57d4-4dcc-bf74-518fb93bb1f4")
+		(property "Reference" "#PWR0264"
+			(at 209.55 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 209.55 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 209.55 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 209.55 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 209.55 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4faff9c0-3626-4a45-8192-e88e630df057")
+		)
+		(instances
+			(project "mgr_board"
+				(path "/14d3b6cb-e4ae-41db-89eb-e86b07bc47b0/af424652-0194-49e8-8dcb-6985df2827ad"
+					(reference "#PWR0264")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 111.76 107.95 270)
 		(unit 1)
@@ -6791,7 +7121,7 @@
 	)
 	(symbol
 		(lib_id "PCM_SL_Resistors:Resistor")
-		(at 210.82 111.76 90)
+		(at 236.22 111.76 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6800,7 +7130,7 @@
 		(fields_autoplaced yes)
 		(uuid "f49cc34d-b7cf-4181-9733-72c25b826db8")
 		(property "Reference" "R69"
-			(at 213.36 110.4899 90)
+			(at 238.76 110.4899 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6809,7 +7139,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 213.36 113.0299 90)
+			(at 238.76 113.0299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6818,7 +7148,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 215.138 110.871 0)
+			(at 240.538 110.871 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6827,7 +7157,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 210.82 111.252 0)
+			(at 236.22 111.252 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6836,7 +7166,7 @@
 			)
 		)
 		(property "Description" "1/4W Resistor"
-			(at 210.82 111.76 0)
+			(at 236.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6845,7 +7175,7 @@
 			)
 		)
 		(property "LCSC" "C25804"
-			(at 210.82 111.76 0)
+			(at 236.22 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
