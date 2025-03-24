@@ -1,4 +1,6 @@
 /home/zaku/projects/mgr_board/sw/build/CMakeFiles/pico-mgr_board.dir
+/home/zaku/projects/mgr_board/sw/build/CMakeFiles/picotoolForceReconfigure.dir
+/home/zaku/projects/mgr_board/sw/build/CMakeFiles/picotoolBuild.dir
 /home/zaku/projects/mgr_board/sw/build/CMakeFiles/edit_cache.dir
 /home/zaku/projects/mgr_board/sw/build/CMakeFiles/rebuild_cache.dir
 /home/zaku/projects/mgr_board/sw/build/pico-sdk/CMakeFiles/edit_cache.dir

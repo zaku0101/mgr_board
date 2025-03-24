@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.13)
 
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
@@ -10,6 +10,7 @@ pico_sdk_init()
 
 add_executable(${PROJECT_NAME}
   mgr_board.c
+  hw_config.c
 )
 
 pico_add_extra_outputs(${PROJECT_NAME})
@@ -23,10 +24,10 @@ pico_add_extra_outputs(${PROJECT_NAME})
 # )
 
 # # Specify the include directories for the library
-# target_include_directories(${PROJECT_NAME} INTERFACE 
+# target_include_directories(${PROJECT_NAME} INTERFACE
 #     ${CMAKE_CURRENT_LIST_DIR}/include
 # )
-add_subdirectory(/home/zaku/no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI build)
+add_subdirectory(no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI build)
 
 target_link_libraries(${PROJECT_NAME}
   pico_stdlib
@@ -37,7 +38,7 @@ target_link_libraries(${PROJECT_NAME}
   hardware_uart
   hardware_dma
   hardware_spi
-  FatFS_SPI
+  FatFs_SPI
 )
 
 pico_enable_stdio_usb(${PROJECT_NAME} 1)

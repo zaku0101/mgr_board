@@ -1,0 +1,5 @@
+/home/zaku/projects/mgr_board/sw/build/_deps/picotool/picotool
+/home/zaku/projects/mgr_board/sw/build/_deps/picotool/picotoolTargets.cmake
+/home/zaku/projects/mgr_board/sw/build/_deps/picotool/picotoolTargets-release.cmake
+/home/zaku/projects/mgr_board/sw/build/_deps/picotool/picotoolConfig.cmake
+/home/zaku/projects/mgr_board/sw/build/_deps/picotool/picotoolConfigVersion.cmake

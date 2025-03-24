@@ -1,112 +1,86 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdint.h>
 
 #include "pico/stdlib.h"
 #include "hardware/timer.h"
 #include "hardware/spi.h"
-#include "hardware/i2c.h"
 #include "hardware/adc.h"
-#include "hardware/uart.h"
 #include "sd_card.h"
 #include "ff.h"
+#include "hw_config.h"
 
-#define DAC_CS 13
-#define ADC0_CS 1
-#define ADC1_CS 5
-#define ADC2_CS 9
-#define SD_CS 17
+#define NUM_ADC_CHANNELS 24
+#define FILENAME "data.csv"
 
+float adc_data[NUM_ADC_CHANNELS];
 
-int main() {
+void handle_error(const char *message, FRESULT error_code) {
+    printf("Error: %s (%d)\n", message, error_code);
+    exit(EXIT_FAILURE);
+}
 
-    FRESULT fr;
-    FATFS fs;
-    FIL fil;
-    int ret;
-    char buf[100];
-    char filename[] = "test02.txt";
+void write_to_file(const char *filename, const char *message) {
+    FIL file;
+    FRESULT result;
 
-    // Initialize chosen serial port
-    stdio_init_all();
+    // Open the file in append mode
+    result = f_open(&file, filename, FA_OPEN_APPEND | FA_WRITE);
+    if (result != FR_OK && result != FR_EXIST) {
+        handle_error("Failed to open file", result);
+    }
 
-    // Wait for user to press 'enter' to continue
-    printf("\r\nSD card test. Press 'enter' to start.\r\n");
-    while (true) {
-        buf[0] = getchar();
-        if ((buf[0] == '\r') || (buf[0] == '\n')) {
-            break;
+    // Write the message to the file
+    if (f_printf(&file, "%s", message) < 0) {
+        printf("Failed to write to file\n");
+    }
+
+    // Close the file
+    result = f_close(&file);
+    if (result != FR_OK) {
+        handle_error("Failed to close file", result);
+    }
+}
+
+void write_header(const char *filename) {
+    write_to_file(filename, "Timestamp,");
+    for (int i = 1; i <= NUM_ADC_CHANNELS / 2; i++) {
+        char column_name[20]; // Buffer to hold the combined string
+        sprintf(column_name, "V_D%d,I_D%d", i, i);
+        write_to_file(filename, column_name);
+        if (i < NUM_ADC_CHANNELS / 2) {
+            write_to_file(filename, ",");
         }
     }
+    write_to_file(filename, "\n");
+}
 
-    // Initialize SD card
-    if (!sd_init_driver()) {
-        printf("ERROR: Could not initialize SD card\r\n");
-        while (true);
+int main() {
+    stdio_init_all();
+
+    printf("Hello, world!\n");
+
+    // Initialize the SD card and mount the filesystem
+    sd_card_t *sd_card = sd_get_by_num(0);
+    FRESULT mount_result = f_mount(&sd_card->fatfs, sd_card->pcName, 1);
+    if (mount_result != FR_OK) {
+        handle_error("Failed to mount filesystem", mount_result);
     }
 
-    // Mount drive
-    fr = f_mount(&fs, "0:", 1);
-    if (fr != FR_OK) {
-        printf("ERROR: Could not mount filesystem (%d)\r\n", fr);
-        while (true);
-    }
+    // Write a message to a file
+    const char *filename = FILENAME;
+    write_header(filename);
 
-    // Open file for writing ()
-    fr = f_open(&fil, filename, FA_WRITE | FA_CREATE_ALWAYS);
-    if (fr != FR_OK) {
-        printf("ERROR: Could not open file (%d)\r\n", fr);
-        while (true);
-    }
+    // Unmount the filesystem
+    f_unmount(sd_card->pcName);
 
-    // Write something to file
-    ret = f_printf(&fil, "This is another test\r\n");
-    if (ret < 0) {
-        printf("ERROR: Could not write to file (%d)\r\n", ret);
-        f_close(&fil);
-        while (true);
-    }
-    ret = f_printf(&fil, "of writing to an SD card.\r\n");
-    if (ret < 0) {
-        printf("ERROR: Could not write to file (%d)\r\n", ret);
-        f_close(&fil);
-        while (true);
-    }
+    printf("Goodbye, world!\n");
 
-    // Close file
-    fr = f_close(&fil);
-    if (fr != FR_OK) {
-        printf("ERROR: Could not close file (%d)\r\n", fr);
-        while (true);
-    }
-
-    // Open file for reading
-    fr = f_open(&fil, filename, FA_READ);
-    if (fr != FR_OK) {
-        printf("ERROR: Could not open file (%d)\r\n", fr);
-        while (true);
-    }
-
-    // Print every line in file over serial
-    printf("Reading from file '%s':\r\n", filename);
-    printf("---\r\n");
-    while (f_gets(buf, sizeof(buf), &fil)) {
-        printf(buf);
-    }
-    printf("\r\n---\r\n");
-
-    // Close file
-    fr = f_close(&fil);
-    if (fr != FR_OK) {
-        printf("ERROR: Could not close file (%d)\r\n", fr);
-        while (true);
-    }
-
-    // Unmount drive
-    f_unmount("0:");
-
-    // Loop forever doing nothing
     while (true) {
+        printf("Hello, world!\n");
         sleep_ms(1000);
     }
+
+    return 0;
 }
