@@ -5,26 +5,9 @@
 #include "diskio.h"
 #include "hardware/uart.h"
 #include "pico/stdlib.h"
-//uart
-#define UART_ID uart0
-#define BAUD_RATE 115200
-#define UART_TX_PIN 0  
-#define UART_RX_PIN 1  
-//spi0 pins
-#define SPI0_MISO 0
-#define SPI0_MOSI 3
-#define SPI0_SCK 2
+#include "global.h"
 
-//spi1 pins
-#define SPI1_MISO 12
-#define SPI1_MOSI 11
-#define SPI1_SCK 10
 
-#define DAC_CS 13 
-#define ADC0_CS 1
-#define ADC1_CS 5
-#define ADC2_CS 9
-#define SD_CS 17
 
 static spi_t spis[] = {  // One for each SPI.
     {
