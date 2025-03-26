@@ -22,3 +22,4 @@
 #define ADC0_CS 1
 #define ADC1_CS 5
 #define SD_CS 17
+

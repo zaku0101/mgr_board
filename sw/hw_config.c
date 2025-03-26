@@ -8,7 +8,6 @@
 #include "global.h"
 
 
-
 static spi_t spis[] = {  // One for each SPI.
     {
         .hw_inst = spi0,  // SPI component
