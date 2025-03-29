@@ -11,6 +11,8 @@ pico_sdk_init()
 add_executable(${PROJECT_NAME}
   mgr_board.c
   MCP48CV.c
+  ADS1148.c
+  pwm.c
   )
 
 pico_add_extra_outputs(${PROJECT_NAME})
@@ -25,6 +27,7 @@ target_link_libraries(${PROJECT_NAME}
   hardware_adc
   hardware_uart
   hardware_dma
+  hardware_pwm
   hardware_spi
   FatFs_SPI
 )

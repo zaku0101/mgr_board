@@ -4,6 +4,7 @@
 #include "hardware/spi.h"
 #include "global.h"
 
+
 //adc control pins
 #define ADC0_DRDY 6
 #define ADC1_DRDY 7
@@ -44,14 +45,25 @@
 
 
 typedef struct {
-    spi_t *spi;
+    spi_inst_t *spi;
     uint ss_gpio;
     uint DRDY_PIN;
     uint START_PIN;
 
 }adc_t;
 
-void adcs_init = (adc_t * adcs);
-void read_register = (adc_t * adc, uint8_t reg, uint8_t addr);
-void write_register = (adc_t * adc, uint8_t reg, uint8_t data);
+void send_command(adc_t adc, uint8_t command);
+void config_spi_gpios();
+void setup_adc_spi();
+void adcs_start(adc_t * adcs);
+void adcs_reset(adc_t * adcs);
+void set_measured_channel(adc_t adc, uint8_t channel);
+uint16_t read_data(adc_t adc, uint8_t command);
+uint16_t convert_adc_data_to_real_value(uint16_t adc_data);
+void adcs_init(adc_t * adcs);
+uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len);
+void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte);
+void read_adc_data(adc_t * adcs, uint8_t * command_table, uint16_t * adc0_meas_buff, uint16_t * adc1_meas_buff);
+
+
 

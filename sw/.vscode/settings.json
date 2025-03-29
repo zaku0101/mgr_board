@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "mcp48cv.h": "c"
+        "mcp48cv.h": "c",
+        "global.h": "c",
+        "ads1148.h": "c"
     }
 }
