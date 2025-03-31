@@ -25,6 +25,7 @@ target_link_libraries(${PROJECT_NAME}
   hardware_i2c
   pico_binary_info
   hardware_adc
+  hardware_gpio
   hardware_uart
   hardware_dma
   hardware_pwm

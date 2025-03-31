@@ -64,7 +64,7 @@ int main() {
         memset(adc0_data_buff, 1, sizeof(adc0_data_buff));
         memset(adc1_data_buff, 1, sizeof(adc1_data_buff));
 
-        read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
+        //read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
         write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
 
         memset(adc0_data_buff, 0, sizeof(adc0_data_buff));

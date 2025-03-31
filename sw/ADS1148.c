@@ -1,17 +1,32 @@
+
+
+#include <stdio.h>
 #include "ADS1148.h"
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "global.h"
 
+
 volatile bool adc0_ready = false;
 volatile bool adc1_ready = false;
 
-void adc0_drdy_isr(uint gpio, uint32_t events) {
-    adc0_ready = true; // Set flag when ADC0_DRDY falls
-}
+uint32_t last_interrupt_time_adc0 = 0;
+uint32_t last_interrupt_time_adc1 = 0;
 
-void adc1_drdy_isr(uint gpio, uint32_t events) {
-    adc1_ready = true; // Set flag when ADC1_DRDY falls
+void gpio_callback(uint gpio, uint32_t events) {
+    uint32_t current_time = to_ms_since_boot(get_absolute_time());
+
+    if (gpio == ADC0_DRDY) {
+        if (current_time - last_interrupt_time_adc0 > 10) { // 10 ms debounce
+            adc0_ready = true;
+            last_interrupt_time_adc0 = current_time;
+        }
+    } else if (gpio == ADC1_DRDY) {
+        if (current_time - last_interrupt_time_adc1 > 10) { // 10 ms debounce
+            adc1_ready = true;
+            last_interrupt_time_adc1 = current_time;
+        }
+    }
 }
 
 void setup_adc_spi() {
@@ -77,12 +92,15 @@ void config_spi_gpios(){
     gpio_init(ADC0_DRDY);
     gpio_set_dir(ADC0_DRDY, GPIO_IN);
     gpio_pull_up(ADC0_DRDY);
+
     gpio_init(ADC1_DRDY);
     gpio_set_dir(ADC1_DRDY, GPIO_IN);
     gpio_pull_up(ADC1_DRDY);
+    
     gpio_init(ADC0_START);
     gpio_set_dir(ADC0_START, GPIO_OUT);
     gpio_pull_down(ADC0_START);
+    
     gpio_init(ADC1_START);
     gpio_set_dir(ADC1_START, GPIO_OUT);
     gpio_pull_down(ADC1_START);
@@ -90,12 +108,13 @@ void config_spi_gpios(){
     gpio_init(ADC0_CS);
     gpio_set_dir(ADC0_CS, GPIO_OUT);
     gpio_put(ADC0_CS, 1);
+
     gpio_init(ADC1_CS);
     gpio_set_dir(ADC1_CS, GPIO_OUT);
     gpio_put(ADC1_CS, 1);
 
-    gpio_set_irq_enabled_with_callback(ADC0_DRDY, GPIO_IRQ_EDGE_FALL, true, &adc0_drdy_isr);
-    gpio_set_irq_enabled_with_callback(ADC1_DRDY, GPIO_IRQ_EDGE_FALL, true, &adc1_drdy_isr);
+    gpio_set_irq_enabled_with_callback(ADC0_DRDY, GPIO_IRQ_EDGE_FALL, true, &gpio_callback);
+    gpio_set_irq_enabled_with_callback(ADC1_DRDY, GPIO_IRQ_EDGE_FALL, true, &gpio_callback);
 }
 
 void adcs_start(adc_t * adcs) {
@@ -155,6 +174,7 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, uint16_t * adc0_meas_b
                 while(!adc0_ready){
                     tight_loop_contents();
                 }
+                printf("ADC0 ready\n");
                 adc0_ready = false; // Reset the flag
                 adc0_meas_buff[j] = convert_adc_data_to_real_value(read_data(adcs[i], RDATA));
                 sleep_ms(1);
@@ -162,6 +182,7 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, uint16_t * adc0_meas_b
                 while(!adc1_ready){
                     tight_loop_contents();
                 }
+                printf("ADC1 ready\n");
                 adc1_ready = false; // Reset the flag
                 adc1_meas_buff[j] = convert_adc_data_to_real_value(read_data(adcs[i], RDATA));
                 sleep_ms(1);

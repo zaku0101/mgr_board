@@ -4,13 +4,6 @@
 #include "hardware/spi.h"
 #include "global.h"
 
-
-//adc control pins
-#define ADC0_DRDY 6
-#define ADC1_DRDY 7
-#define ADC1_START 8
-#define ADC0_START 9
-
 //spi commands
 #define WAKEUP 0x00
 #define SLEEP 0x02
@@ -52,6 +45,7 @@ typedef struct {
 
 }adc_t;
 
+void gpio_callback(uint gpio, uint32_t events);
 void send_command(adc_t adc, uint8_t command);
 void config_spi_gpios();
 void setup_adc_spi();

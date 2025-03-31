@@ -23,5 +23,11 @@
 #define ADC1_CS 5
 #define SD_CS 17
 
+//adc control pins
+#define ADC0_DRDY 6
+#define ADC1_DRDY 7
+#define ADC1_START 8
+#define ADC0_START 9
+
 #define NUMBER_OF_ADC_CHANNELS 7
 
