@@ -15,12 +15,11 @@
 #include "global.h"
 #include "pwm.h"
 
-int spi_adc_read_buff[NUM_SPI_ADC_CHANNELS];
 int pico_adc_val;
 float meas_data[MEAS_DATA_BUFF_SIZE];
-
+int counter = 0;
 static uint8_t dac_val[] = {0x9b, 0x9b, 0x9b, 0x7c, 0x7c, 0x7c};
-
+const char *filename = FILENAME;
 static uint8_t adc_input_channels[] = {0x06, 0x0E, 0x16, 0x1E, 0x26, 0x2E, 0x3E};
 
 static adc_t adcs[] = {
@@ -61,7 +60,16 @@ int main() {
 
     while (true) {
         printf("Hello, world!\n");
+
+        memset(adc0_data_buff, 1, sizeof(adc0_data_buff));
+        memset(adc1_data_buff, 1, sizeof(adc1_data_buff));
+
         read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
+        write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
+
+        memset(adc0_data_buff, 0, sizeof(adc0_data_buff));
+        memset(adc1_data_buff, 0, sizeof(adc1_data_buff));
+
         sleep_ms(1000);
     }
 

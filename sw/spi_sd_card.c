@@ -41,21 +41,49 @@ void write_to_file(const char *filename, const char *message) {
 }
 
 void write_header(const char *filename) {
-    write_to_file(filename, "Timestamp,");
-    for (int i = 1; i <= NUM_ADC_CHANNELS / 2; i++) {
+    write_to_file(filename, "Hour,");
+    for (int i = 1; i <= NUM_SPI_ADC_CHANNELS; i++) {
         char column_name[20]; // Buffer to hold the combined string
         sprintf(column_name, "V_D%d,I_D%d", i, i);
         write_to_file(filename, column_name);
-        if (i < NUM_ADC_CHANNELS / 2) {
+        if (i < NUM_SPI_ADC_CHANNELS) {
             write_to_file(filename, ",");
         }
     }
     write_to_file(filename, "\n");
 }
 
-void init_sd_card() {
+void write_data(const char *filename, uint16_t *adc0_buff, uint16_t *adc1_buff, int *counter) {
 
-    printf("Hello, world!\n");
+    sd_card_t *sd_card = sd_get_by_num(0);
+    FRESULT mount_result = f_mount(&sd_card->fatfs, sd_card->pcName, 1);
+    if (mount_result != FR_OK) {
+        handle_error("Failed to mount filesystem", mount_result);
+    }
+
+    char buffer[20]; // Temporary buffer for small chunks of data
+
+    // Write the counter value
+    snprintf(buffer, sizeof(buffer), "%d", *counter);
+    write_to_file(filename, buffer);
+
+    // Append ADC data
+    for (int i = 0; i < NUMBER_OF_ADC_CHANNELS; i++) {
+        snprintf(buffer, sizeof(buffer), ",%d,%d", adc0_buff[i], adc1_buff[i]);
+        printf("Writing data: %s\n", buffer); // Debug print
+        write_to_file(filename, buffer);
+    }
+
+    // Add a newline at the end
+    write_to_file(filename, "\n");
+
+    // Increment the counter
+    (*counter)++;
+
+    
+}
+
+void init_sd_card() {
 
     // Initialize the SD card and mount the filesystem
     sd_card_t *sd_card = sd_get_by_num(0);
