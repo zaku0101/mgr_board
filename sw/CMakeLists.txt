@@ -22,12 +22,8 @@ add_subdirectory(no-OS-FatFS-SD-SPI-RPi-Pico/FatFs_SPI build)
 target_link_libraries(${PROJECT_NAME}
   pico_stdlib
   hardware_timer
-  hardware_i2c
-  pico_binary_info
   hardware_adc
-  hardware_gpio
   hardware_uart
-  hardware_dma
   hardware_pwm
   hardware_spi
   FatFs_SPI

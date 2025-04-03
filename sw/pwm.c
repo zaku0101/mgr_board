@@ -11,6 +11,12 @@ void init_pwm(){
 }
 
 void setup_pwm_settings(){
+
+    pwm_config cfg = pwm_get_default_config();
+    pwm_config_set_clkdiv_mode(&cfg, PWM_DIV_FREE_RUNNING);
+    pwm_config_set_clkdiv_int (&cfg, PWM_SYSCLK_DIV);
+    pwm_config_set_wrap(&cfg, PWM_DUTY);  
+
     uint slice_pwm0 = pwm_gpio_to_slice_num(PWM_0);
     uint channel_pwm0 = pwm_gpio_to_channel(PWM_0);
     uint slice_pwm1 = pwm_gpio_to_slice_num(PWM_1);
@@ -23,6 +29,13 @@ void setup_pwm_settings(){
     uint channel_pwm4 = pwm_gpio_to_channel(PWM_4);
     uint slice_pwm5 = pwm_gpio_to_slice_num(PWM_5);
     uint channel_pwm5 = pwm_gpio_to_channel(PWM_5);
+
+    pwm_set_wrap(slice_pwm0, PWM_DUTY);
+    pwm_set_wrap(slice_pwm1, PWM_DUTY);
+    pwm_set_wrap(slice_pwm2, PWM_DUTY);
+    pwm_set_wrap(slice_pwm3, PWM_DUTY);
+    pwm_set_wrap(slice_pwm4, PWM_DUTY);
+    pwm_set_wrap(slice_pwm5, PWM_DUTY);
 
     pwm_set_chan_level(slice_pwm0, channel_pwm0, PWM_LEVEL_0);
     pwm_set_chan_level(slice_pwm1, channel_pwm1, PWM_LEVEL_0);

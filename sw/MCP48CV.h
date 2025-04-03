@@ -13,6 +13,8 @@ extern uint8_t adc_reg_addr[DAC_CHANNEL_COUNT];
 
 void cs_select(int cs_pin);
 void cs_deselect(int cs_pin);
-static void write_register(spi_inst_t * spi, uint8_t reg, uint8_t data);
-void init_dac(spi_inst_t * spi);
-void set_dac(spi_inst_t * spi, uint8_t * channels, uint8_t * values);
+void write_register(spi_inst_t *spi, uint8_t reg, uint8_t data);
+void init_dac(spi_inst_t *spi);
+void set_dac(spi_inst_t *spi, uint8_t * values);
+void setup_dac_spi();
+void read_register(spi_inst_t *spi, uint8_t reg, uint8_t * ret_buff, uint16_t len);

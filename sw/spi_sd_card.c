@@ -13,6 +13,8 @@
 #include "global.h"
 
 
+
+
 void handle_error(const char *message, FRESULT error_code) {
     printf("Error: %s (%d)\n", message, error_code);
     exit(EXIT_FAILURE);
@@ -41,6 +43,12 @@ void write_to_file(const char *filename, const char *message) {
 }
 
 void write_header(const char *filename) {
+    sd_card_t *sd_card = sd_get_by_num(0);
+    FRESULT mount_result = f_mount(&sd_card->fatfs, sd_card->pcName, 1);
+    if (mount_result != FR_OK) {
+        handle_error("Failed to mount filesystem", mount_result);
+    }
+
     write_to_file(filename, "Hour,");
     for (int i = 1; i <= NUM_SPI_ADC_CHANNELS; i++) {
         char column_name[20]; // Buffer to hold the combined string
@@ -51,10 +59,10 @@ void write_header(const char *filename) {
         }
     }
     write_to_file(filename, "\n");
+    f_unmount(sd_card->pcName);
 }
 
 void write_data(const char *filename, uint16_t *adc0_buff, uint16_t *adc1_buff, int *counter) {
-
     sd_card_t *sd_card = sd_get_by_num(0);
     FRESULT mount_result = f_mount(&sd_card->fatfs, sd_card->pcName, 1);
     if (mount_result != FR_OK) {
@@ -80,22 +88,12 @@ void write_data(const char *filename, uint16_t *adc0_buff, uint16_t *adc1_buff, 
     // Increment the counter
     (*counter)++;
 
-    
+    f_unmount(sd_card->pcName);
 }
 
 void init_sd_card() {
 
-    // Initialize the SD card and mount the filesystem
-    sd_card_t *sd_card = sd_get_by_num(0);
-    FRESULT mount_result = f_mount(&sd_card->fatfs, sd_card->pcName, 1);
-    if (mount_result != FR_OK) {
-        handle_error("Failed to mount filesystem", mount_result);
-    }
-
-    // Write a message to a file
     const char *filename = FILENAME;
     write_header(filename);
-
-    // Unmount the filesystem
-    f_unmount(sd_card->pcName);
+  
 }

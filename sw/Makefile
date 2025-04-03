@@ -1,9 +1,11 @@
-build:
-	mkdir build
-	cmake . -B build 
+all: build/
 	make -C build
 
-flash:build/pico-mgr_board.uf2
+build/:
+	mkdir build
+	cmake . -B build 
+
+flash: build/
 	picotool load -f build/pico-mgr_board.uf2
 
 clean:

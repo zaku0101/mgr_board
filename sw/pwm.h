@@ -8,8 +8,17 @@
 #define PWM_4 20
 #define PWM_5 19
 
-#define PWM_LEVEL_0 10000
-#define PWM_LEVEL_1 12500
+//standard PWM levels
+// #define PWM_LEVEL_0 50000
+// #define PWM_LEVEL_1 62500
+
+//reduced PWM levels for debugging
+#define PWM_LEVEL_0 500
+#define PWM_LEVEL_1 500
+
+#define PWM_SYSCLK_DIV 2
+
+#define PWM_DUTY ((uint16_t) 62500)
 
 
 void init_pwm();

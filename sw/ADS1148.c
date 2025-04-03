@@ -1,31 +1,18 @@
-
-
 #include <stdio.h>
 #include "ADS1148.h"
 #include "pico/stdlib.h"
 #include "hardware/spi.h"
 #include "global.h"
-
+#include "hardware/gpio.h"
 
 volatile bool adc0_ready = false;
 volatile bool adc1_ready = false;
 
-uint32_t last_interrupt_time_adc0 = 0;
-uint32_t last_interrupt_time_adc1 = 0;
-
 void gpio_callback(uint gpio, uint32_t events) {
-    uint32_t current_time = to_ms_since_boot(get_absolute_time());
-
     if (gpio == ADC0_DRDY) {
-        if (current_time - last_interrupt_time_adc0 > 10) { // 10 ms debounce
-            adc0_ready = true;
-            last_interrupt_time_adc0 = current_time;
-        }
+        adc0_ready = true;
     } else if (gpio == ADC1_DRDY) {
-        if (current_time - last_interrupt_time_adc1 > 10) { // 10 ms debounce
-            adc1_ready = true;
-            last_interrupt_time_adc1 = current_time;
-        }
+        adc1_ready = true;
     }
 }
 
@@ -107,11 +94,9 @@ void config_spi_gpios(){
 
     gpio_init(ADC0_CS);
     gpio_set_dir(ADC0_CS, GPIO_OUT);
-    gpio_put(ADC0_CS, 1);
 
     gpio_init(ADC1_CS);
     gpio_set_dir(ADC1_CS, GPIO_OUT);
-    gpio_put(ADC1_CS, 1);
 
     gpio_set_irq_enabled_with_callback(ADC0_DRDY, GPIO_IRQ_EDGE_FALL, true, &gpio_callback);
     gpio_set_irq_enabled_with_callback(ADC1_DRDY, GPIO_IRQ_EDGE_FALL, true, &gpio_callback);
@@ -150,19 +135,19 @@ uint16_t read_data(adc_t adc, uint8_t command) {
     spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
     gpio_put(adc.ss_gpio, 1);
     sleep_ms(10);
-    return (ret_buff[0] << 8) | ret_buff[1];
+    return ((uint16_t)ret_buff[0] << 8) | ret_buff[1];
 }
 
 uint16_t convert_adc_data_to_real_value(uint16_t adc_data) {
     uint16_t ret_val;
-    ret_val = (adc_data * 5) / 32768;
+    ret_val = (adc_data * 65536) / 5;
     //TODO przeliczanie na wartość prądu.
     return ret_val; 
 }
 
 void read_adc_data(adc_t * adcs, uint8_t * command_table, uint16_t * adc0_meas_buff, uint16_t * adc1_meas_buff) {
     for(int i = 0; i < 2; i++){
-        for(int j = 0; j < sizeof(adc0_meas_buff) / sizeof(uint16_t); j++){
+        for(int j = 0; j < NUMBER_OF_ADC_CHANNELS / sizeof(uint16_t); j++){
             send_command(adcs[i], SDATAC);
             sleep_ms(1);
             send_command(adcs[i], command_table[j]);
@@ -177,14 +162,16 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, uint16_t * adc0_meas_b
                 printf("ADC0 ready\n");
                 adc0_ready = false; // Reset the flag
                 adc0_meas_buff[j] = convert_adc_data_to_real_value(read_data(adcs[i], RDATA));
+                printf("ADC %d data for ch: %d\n",adcs[i], adc0_meas_buff[j]);
                 sleep_ms(1);
-            }else{
+            }else if(i == 1){
                 while(!adc1_ready){
                     tight_loop_contents();
                 }
                 printf("ADC1 ready\n");
                 adc1_ready = false; // Reset the flag
                 adc1_meas_buff[j] = convert_adc_data_to_real_value(read_data(adcs[i], RDATA));
+                printf("ADC %d data for ch: %d\n",adcs[i], adc0_meas_buff[j]);
                 sleep_ms(1);
             }
         }

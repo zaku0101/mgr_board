@@ -18,7 +18,11 @@
 int pico_adc_val;
 float meas_data[MEAS_DATA_BUFF_SIZE];
 int counter = 0;
-static uint8_t dac_val[] = {0x9b, 0x9b, 0x9b, 0x7c, 0x7c, 0x7c};
+
+//static uint8_t dac_val[] = {0x8c, 0x8c, 0x8c, 0x99, 0x99, 0x99}; //normal dac values
+
+static uint8_t dac_val[] = {0x0A, 0x0A, 0x0A, 0x0A, 0x0A, 0x0A}; //reduced dac values for debugging
+
 const char *filename = FILENAME;
 static uint8_t adc_input_channels[] = {0x06, 0x0E, 0x16, 0x1E, 0x26, 0x2E, 0x3E};
 
@@ -43,35 +47,54 @@ uint16_t adc1_data_buff[NUMBER_OF_ADC_CHANNELS];
 
 int main() {
     stdio_init_all();
-    init_sd_card();
-    init_dac(spis[0].hw_inst);
-    set_dac(spis[0].hw_inst, adc_reg_addr, dac_val);
+    //init_sd_card();
 
-    init_pwm();
-    setup_pwm_settings();
+    setup_dac_spi();
+    init_dac(spi1);
+    set_dac(spi1, dac_val);
 
-    adcs_start(adcs);
-    config_spi_gpios();
-    setup_adc_spi();
-    adcs_reset(adcs);
-    sleep_ms(1);
-    adcs_init(adcs);
+    //init_pwm();
+    //setup_pwm_settings();
+    //
+    //config_spi_gpios();
+    //setup_adc_spi();
+
+    //adcs_start(adcs);
+    //adcs_reset(adcs);
+    //sleep_ms(1);
+    //adcs_init(adcs);
 
 
     while (true) {
-        printf("Hello, world!\n");
+        //printf("Start of main loop!\n");
+        printf("DAC sanity check\n");
+        uint8_t buf[3];
+        read_register(spi1, 0x05, buf, 0x03);
+        printf("DAC register VREF: 0x%02X, 0x%02X, 0x%02X\n", buf[0], buf[1], buf[2]);
+        
+        write_register(spi1, 0x05, 0x00);
 
-        memset(adc0_data_buff, 1, sizeof(adc0_data_buff));
-        memset(adc1_data_buff, 1, sizeof(adc1_data_buff));
+        read_register(spi1, 0x05, buf, 0x03);
+        printf("DAC register VREF: 0x%02X, 0x%02X, 0x%02X\n", buf[0], buf[1], buf[2]);
+        // read_register(spi1, PDC_CTRL_REG, buf, 0x02);
+        // printf("DAC register pdc: 0x%02X, 0x%02X\n", buf[0], buf[1]);
+        // read_register(spi1, GAIN_CTRL_REG, buf, 0x02);
+        // printf("DAC register gain ctrl: 0x%02X, 0x%02X\n", buf[0], buf[1]);
+
+        // for(uint8_t i = 0x00; i < 0x07; i++){
+        //     read_register(spi1, adc_input_channels[i], buf, 0x02);
+        //     printf("ADC register %d, value: 0x%02X, 0x%02X\n", i, buf[0], buf[1]);
+        // }
+
 
         //read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
-        write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
-
-        memset(adc0_data_buff, 0, sizeof(adc0_data_buff));
-        memset(adc1_data_buff, 0, sizeof(adc1_data_buff));
-
+       //write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
+        //set_dac(spi1, dac_val);
+        //memset(adc0_data_buff, 0, sizeof(adc0_data_buff));
+        //memset(adc1_data_buff, 0, sizeof(adc1_data_buff));
+        //printf("End of main loop\n");
         sleep_ms(1000);
     }
-
+       
     return 0;
 }
