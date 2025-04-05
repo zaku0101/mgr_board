@@ -25,8 +25,6 @@ void setup_dac_spi() {
     cs_deselect(DAC_CS);
 
     spi_set_format(spi1, 8, SPI_CPOL_0, SPI_CPHA_0, SPI_MSB_FIRST);
-
-    uint8_t ret_buf[4];
 }
 
 void write_register(spi_inst_t *spi, uint8_t reg, uint8_t data) {
@@ -42,7 +40,6 @@ void write_register(spi_inst_t *spi, uint8_t reg, uint8_t data) {
 }
 void read_register(spi_inst_t *spi, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
     reg = (reg << 3) | 0x06;
-    uint8_t buf[len];
     cs_select(DAC_CS);
     for(int i = 0; i < len; i++){
         spi_read_blocking(spi, reg, &ret_buff[i], 1); 
@@ -58,10 +55,14 @@ void init_dac(spi_inst_t *spi) {
     write_register(spi, GAIN_CTRL_REG, 0x00);
 }
 
-void set_dac(spi_inst_t *spi, uint8_t * values) {
-    printf("Setting DAC values...\n");
-    for(int i =0; i < DAC_CHANNELS; i++) {      
-        write_register(spi, adc_reg_addr[i], values[i]);
-        sleep_ms(10);
-    }
+void set_dac(spi_inst_t *spi) {
+    
+        write_register(spi, 0x00, LOW_DAC_VALUE);
+        write_register(spi, 0x01, LOW_DAC_VALUE);
+        write_register(spi, 0x02, HIGH_DAC_VALUE);
+        write_register(spi, 0x03, LOW_DAC_VALUE);
+        write_register(spi, 0x05, HIGH_DAC_VALUE);
+        write_register(spi, 0x07, HIGH_DAC_VALUE);
+
+        sleep_ms(2);
 }
