@@ -9,8 +9,8 @@
 #define PDC_CTRL_REG 0x09 // Power Down Control Register, set to 0x00
 #define GAIN_CTRL_REG 0x1A // Gain Control Register, when vref is set to vdd register values are ignored
 
-#define LOW_DAC_VALUE 0x00
-#define HIGH_DAC_VALUE 0x00
+#define LOW_DAC_VALUE 0x98
+#define HIGH_DAC_VALUE 0x98
 
 extern uint8_t adc_reg_addr[DAC_CHANNEL_COUNT];
 
