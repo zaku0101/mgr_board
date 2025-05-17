@@ -13,6 +13,7 @@ add_executable(${PROJECT_NAME}
   MCP48CV.c
   ADS1148.c
   pwm.c
+  mux.c
   )
 
 pico_add_extra_outputs(${PROJECT_NAME})

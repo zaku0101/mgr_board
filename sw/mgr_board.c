@@ -14,10 +14,13 @@
 #include "ADS1148.h"
 #include "global.h"
 #include "pwm.h"
+#include "mux.h"
 
 int pico_adc_val;
 float meas_data[MEAS_DATA_BUFF_SIZE];
 int counter = 0;
+
+float voltage_buffer[MUX_CHANNELS];
 
 const char *filename = FILENAME;
 static uint8_t adc_input_channels[] = {0x06, 0x0E, 0x16, 0x1E, 0x26, 0x2E, 0x3E};
@@ -43,6 +46,7 @@ int16_t adc1_data_buff[NUMBER_OF_ADC_CHANNELS];
 
 int main() {
     stdio_init_all();
+    init_mux();
     //init_sd_card();
 
     setup_dac_spi();
@@ -89,10 +93,16 @@ int main() {
         printf("Read:%02X, %02X, %02X\n", buf[0], buf[1], buf[2]);
 
         read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
-
+        
         for (int i = 0; i < NUMBER_OF_ADC_CHANNELS; i++) {
             printf("buffer");
             printf("ADC0 channel %d: %0d\n", i, adc0_data_buff[i]);
+        }
+        
+        read_all_mux_channels_to_buff(voltage_buffer);
+        
+        for (int i = 0; i < MUX_CHANNELS; i++) {
+            printf("MUX channel %d: %0.2f\n", i, voltage_buffer[i]);
         }
         //write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
 
