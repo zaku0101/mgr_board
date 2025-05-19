@@ -38,11 +38,6 @@ void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
     buf[1] = 0x01;
     buf[2] = data_byte;
 
-    gpio_put(ADC0_START, 1);
-    sleep_ms(5);
-    gpio_put(ADC0_START, 0);
-
-
     gpio_put(adc.ss_gpio, 0);
     spi_write_blocking(adc.spi, buf, 3);
     gpio_put(adc.ss_gpio, 1);
@@ -55,10 +50,6 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
     buf[0] = (RREG << 4) | reg;  ;
     buf[1] = 0x01;
 
-    gpio_put(ADC0_START, 1);
-    sleep_ms(5);
-    gpio_put(ADC0_START, 0);
-
     gpio_put(adc.ss_gpio, 0);
     spi_write_read_blocking(adc.spi, buf, ret_buff, len);
     gpio_put(adc.ss_gpio, 1);
@@ -68,8 +59,7 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
 void adcs_init(adc_t * adcs) {
     for(int i = 0; i < 2; i++){
         gpio_put(ADC0_START, 1);
-        sleep_ms(5);
-        //gpio_put(ADC0_START, 0);
+        gpio_put(ADC1_START, 1);
 
         gpio_put(adcs[i].ss_gpio, 0);
         sleep_ms(1);
@@ -137,14 +127,14 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 }
 
 uint16_t read_data(adc_t adc, uint8_t command) {
-    uint8_t ret_buff[2];
+    uint8_t ret_buff[3];
     //uint8_t buff[] = {command};
     gpio_put(adc.ss_gpio, 0);
     //spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
-    send_command(adc, command);
-    spi_read_blocking(adc.spi, 0, ret_buff, 2);
+    spi_write_blocking(adc.spi, &command, 1);
+    spi_read_blocking(adc.spi, 0, ret_buff, 3);
     gpio_put(adc.ss_gpio, 1);
-    //printf("ADC data: %x %x \n", ret_buff[0], ret_buff[1]);
+    printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
     return ((uint16_t)ret_buff[0] << 8) | ret_buff[1];
 }
 
@@ -160,11 +150,11 @@ float convert_adc_data_to_real_value(uint16_t adc_data) {
 void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_buff, int16_t * adc1_meas_buff) {
     for(int i = 0; i < 1; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
-            gpio_put(ADC0_START, 1);
-            sleep_ms(5);
-            gpio_put(ADC0_START, 0);
+            uint8_t cmd = SYNC;
             gpio_put(adcs[i].ss_gpio, 0);
-            send_command(adcs[i], command_table[j]);
+            spi_write_blocking(adcs[i].spi, &command_table[j], 1);
+            spi_write_blocking(adcs[i].spi, &cmd, 1);
+            // send_command(adcs[i], command_table[j]);
             // send_command(adcs[i], SYNC);
             gpio_put(adcs[i].ss_gpio, 1);
 
@@ -177,8 +167,6 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_bu
             }
         }
     }
-
-    sleep_ms(1000);
 }
 
 

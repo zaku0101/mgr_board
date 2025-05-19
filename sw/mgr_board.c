@@ -59,9 +59,6 @@ int main() {
     config_spi_gpios();
     // adcs_start(adcs);
 
-    gpio_put(ADC0_START, 1);
-    sleep_ms(5);
-    gpio_put(ADC0_START, 0);
 
 
     setup_adc_spi();
