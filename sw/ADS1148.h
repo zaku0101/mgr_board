@@ -53,7 +53,7 @@ void adcs_start(adc_t * adcs);
 void adcs_reset(adc_t * adcs);
 void set_measured_channel(adc_t adc, uint8_t channel);
 uint16_t read_data(adc_t adc, uint8_t command);
-uint16_t convert_adc_data_to_real_value(uint16_t adc_data);
+float convert_adc_data_to_real_value(uint16_t adc_data);
 void adcs_init(adc_t * adcs);
 uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len);
 void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte);

@@ -17,7 +17,7 @@ void gpio_callback(uint gpio, uint32_t events) {
 }
 
 void setup_adc_spi() {
-    spi_init(spi0, 410 * 1000);
+    spi_init(spi0, 205 * 1000);
     gpio_set_function(SPI0_MISO, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_MOSI, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_SCK, GPIO_FUNC_SPI);
@@ -66,16 +66,17 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
 }
 
 void adcs_init(adc_t * adcs) {
-    for(int i = 0; i < 1; i++){
+    for(int i = 0; i < 2; i++){
         gpio_put(ADC0_START, 1);
         sleep_ms(5);
-        gpio_put(ADC0_START, 0);
+        //gpio_put(ADC0_START, 0);
 
         gpio_put(adcs[i].ss_gpio, 0);
         sleep_ms(1);
         
         uint8_t cmd = RESET;
         spi_write_blocking(adcs[i].spi, &cmd, 1);
+        sleep_ms(3);
         cmd = SDATAC;
         spi_write_blocking(adcs[i].spi, &cmd, 1);
 
@@ -136,17 +137,20 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 }
 
 uint16_t read_data(adc_t adc, uint8_t command) {
-    uint8_t ret_buff[3];
-    uint8_t buff[] = {command};
+    uint8_t ret_buff[2];
+    //uint8_t buff[] = {command};
     gpio_put(adc.ss_gpio, 0);
-    spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
+    //spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
+    send_command(adc, command);
+    spi_read_blocking(adc.spi, 0, ret_buff, 2);
     gpio_put(adc.ss_gpio, 1);
-    return ((uint16_t)ret_buff[1] << 8) | ret_buff[2];
+    //printf("ADC data: %x %x \n", ret_buff[0], ret_buff[1]);
+    return ((uint16_t)ret_buff[0] << 8) | ret_buff[1];
 }
 
-uint16_t convert_adc_data_to_real_value(uint16_t adc_data) {
-    uint16_t ret_val;
-    ret_val = (adc_data * 65536) / 5;
+float convert_adc_data_to_real_value(uint16_t adc_data) {
+    float ret_val;
+    ret_val = (adc_data * 5)/65536;
     //TODO przeliczanie na wartość prądu.
     return ret_val; 
 }
@@ -161,19 +165,15 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_bu
             gpio_put(ADC0_START, 0);
             gpio_put(adcs[i].ss_gpio, 0);
             send_command(adcs[i], command_table[j]);
-            send_command(adcs[i], SYNC);
+            // send_command(adcs[i], SYNC);
             gpio_put(adcs[i].ss_gpio, 1);
 
             if(i == 0){
                 while(gpio_get(ADC0_DRDY));
-
                 adc0_meas_buff[j] = read_data(adcs[i], RDATA);
             }else if(i == 1){
                 while(gpio_get(ADC1_DRDY));
-
                 adc1_meas_buff[j] = read_data(adcs[i], RDATA);
-
-
             }
         }
     }

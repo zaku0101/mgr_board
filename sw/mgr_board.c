@@ -70,36 +70,14 @@ int main() {
     adcs_init(adcs);
 
     while (true) {
-        uint8_t buf[3];
-        //adcs_start(adcs);
-
-        gpio_put(ADC0_START, 1);
-        sleep_ms(5);
-        gpio_put(ADC0_START, 0);
-
-        sleep_ms(1);
-        write_reg(adcs[0], MUX1, 0x11); //Set for full scale external reference voltage 0-5V MOZE
-        sleep_ms(1000);
-        // adcs_start(adcs);
-
-        gpio_put(ADC0_START, 1);
-        sleep_ms(5);
-        gpio_put(ADC0_START, 0);
-    
-
-        sleep_ms(1);
-        read_reg(adcs[0], MUX1, buf, 3);
-        sleep_ms(1000);
-        printf("Read:%02X, %02X, %02X\n", buf[0], buf[1], buf[2]);
 
         read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
         
         for (int i = 0; i < NUMBER_OF_ADC_CHANNELS; i++) {
-            printf("buffer");
-            printf("ADC0 channel %d: %0d\n", i, adc0_data_buff[i]);
+            printf("ADC0 channel %d: %ld\n", i, adc0_data_buff[i]);
         }
         
-        read_all_mux_channels_to_buff(voltage_buffer);
+        read_all_mux_channels_to_buff(voltage_buffer );
         
         for (int i = 0; i < MUX_CHANNELS; i++) {
             printf("MUX channel %d: %0.2f\n", i, voltage_buffer[i]);

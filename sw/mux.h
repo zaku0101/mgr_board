@@ -7,7 +7,7 @@
 #define ADC_CHANNEL 0
 #define ADC_PIN 26
 #define VOLTAGE_DIVIDER_CONST 1
-#define MUX_CHANNELS 12
+#define MUX_CHANNELS 16
 
 #define MUX_S0 14
 #define MUX_S1 15
