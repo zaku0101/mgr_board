@@ -41,7 +41,7 @@ void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
     gpio_put(adc.ss_gpio, 0);
     spi_write_blocking(adc.spi, buf, 3);
     gpio_put(adc.ss_gpio, 1);
-    //sleep_ms(2);
+    sleep_ms(2);
 }
 
 uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
@@ -128,14 +128,14 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 
 uint16_t read_data(adc_t adc, uint8_t command) {
     uint8_t ret_buff[3];
-    //uint8_t buff[] = {command};
+    uint8_t buff[] = {command};
     gpio_put(adc.ss_gpio, 0);
-    //spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
-    spi_write_blocking(adc.spi, &command, 1);
-    spi_read_blocking(adc.spi, 0, ret_buff, 3);
+    spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
+    // spi_write_blocking(adc.spi, &command, 1);
+    // spi_read_blocking(adc.spi, 0, ret_buff, 2);
     gpio_put(adc.ss_gpio, 1);
     printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
-    return ((uint16_t)ret_buff[0] << 8) | ret_buff[1];
+    return ((uint16_t)ret_buff[1] << 8) | ret_buff[2];
 }
 
 float convert_adc_data_to_real_value(uint16_t adc_data) {
@@ -151,20 +151,25 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_bu
     for(int i = 0; i < 1; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
             uint8_t cmd = SYNC;
-            gpio_put(adcs[i].ss_gpio, 0);
-            spi_write_blocking(adcs[i].spi, &command_table[j], 1);
-            spi_write_blocking(adcs[i].spi, &cmd, 1);
-            // send_command(adcs[i], command_table[j]);
-            // send_command(adcs[i], SYNC);
-            gpio_put(adcs[i].ss_gpio, 1);
+            //gpio_put(adcs[i].ss_gpio, 0);
+            //spi_write_blocking(adcs[i].spi, &command_table[j], 1);
+            //spi_write_blocking(adcs[i].spi, &cmd, 1);
+            write_reg(adcs[i],MUX0, command_table[j]);
+            send_command(adcs[i], SYNC);
+            //gpio_put(adcs[i].ss_gpio, 1);
 
             if(i == 0){
-                while(gpio_get(ADC0_DRDY));
+                while(gpio_get(ADC0_DRDY)){
+                    asm("nop");
+                };
                 adc0_meas_buff[j] = read_data(adcs[i], RDATA);
             }else if(i == 1){
-                while(gpio_get(ADC1_DRDY));
+                while(gpio_get(ADC1_DRDY)){
+                    asm("nop");
+                }
                 adc1_meas_buff[j] = read_data(adcs[i], RDATA);
             }
+            sleep_ms(10);
         }
     }
 }
