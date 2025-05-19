@@ -17,7 +17,7 @@ void gpio_callback(uint gpio, uint32_t events) {
 }
 
 void setup_adc_spi() {
-    spi_init(spi0, 205 * 1000);
+    spi_init(spi0, 100 * 1000);
     gpio_set_function(SPI0_MISO, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_MOSI, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_SCK, GPIO_FUNC_SPI);
@@ -27,9 +27,9 @@ void setup_adc_spi() {
 
 void send_command(adc_t adc, uint8_t command) {
     gpio_put(adc.ss_gpio, 0);
+    sleep_ms(2);
     spi_write_blocking(adc.spi, &command, 1);
     gpio_put(adc.ss_gpio, 1);
-    sleep_ms(2);
 }
 
 void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
@@ -51,9 +51,9 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
     buf[1] = 0x01;
 
     gpio_put(adc.ss_gpio, 0);
+    sleep_ms(2);
     spi_write_read_blocking(adc.spi, buf, ret_buff, len);
     gpio_put(adc.ss_gpio, 1);
-    sleep_ms(2);
 }
 
 void adcs_init(adc_t * adcs) {
@@ -71,9 +71,6 @@ void adcs_init(adc_t * adcs) {
         spi_write_blocking(adcs[i].spi, &cmd, 1);
 
         write_reg(adcs[i], MUX1, 0xA5); //Set for full scale external reference voltage 0-5V MOZE
-
-        cmd = SYNC;
-        spi_write_blocking(adcs[i].spi, &cmd, 1);
         
         gpio_put(adcs[i].ss_gpio, 1); // set DRDY pin as data ready active low
     }
@@ -128,7 +125,7 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 
 uint16_t read_data(adc_t adc, uint8_t command) {
     uint8_t ret_buff[3];
-    uint8_t buff[] = {command};
+    uint8_t buff[3] = {command,NOP,NOP};
     gpio_put(adc.ss_gpio, 0);
     spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
     // spi_write_blocking(adc.spi, &command, 1);
@@ -139,10 +136,7 @@ uint16_t read_data(adc_t adc, uint8_t command) {
 }
 
 float convert_adc_data_to_real_value(uint16_t adc_data) {
-    float ret_val;
-    ret_val = (adc_data * 5)/65536;
-    //TODO przeliczanie na wartość prądu.
-    return ret_val; 
+    return ((int16_t)adc_data) * 5.0f / 32768.0f;
 }
 
 //MEAS AMPLIFIER HAS 20V/V amplification
@@ -151,25 +145,32 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_bu
     for(int i = 0; i < 1; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
             uint8_t cmd = SYNC;
+            uint8_t recv_command;
+            send_command(adcs[i], WAKEUP);
+            sleep_ms(5);
             //gpio_put(adcs[i].ss_gpio, 0);
             //spi_write_blocking(adcs[i].spi, &command_table[j], 1);
             //spi_write_blocking(adcs[i].spi, &cmd, 1);
+           send_command(adcs[i], RESET);
+            // sleep_ms(10);
+            send_command(adcs[i], SDATAC);
+            printf("command: %x\n", command_table[j]);
             write_reg(adcs[i],MUX0, command_table[j]);
+            sleep_ms(5);
+            read_reg(adcs[i],MUX0, &recv_command, 1);
+            printf("MUX0: %x\n", recv_command);
+
+
             send_command(adcs[i], SYNC);
+            sleep_ms(5);
             //gpio_put(adcs[i].ss_gpio, 1);
 
-            if(i == 0){
-                while(gpio_get(ADC0_DRDY)){
-                    asm("nop");
-                };
-                adc0_meas_buff[j] = read_data(adcs[i], RDATA);
-            }else if(i == 1){
-                while(gpio_get(ADC1_DRDY)){
-                    asm("nop");
-                }
-                adc1_meas_buff[j] = read_data(adcs[i], RDATA);
+            while(gpio_get(adcs[i].DRDY_PIN) == 0){
+                tight_loop_contents(); 
             }
-            sleep_ms(10);
+            adc0_meas_buff[j] = read_data(adcs[i], RDATA);
+
+            sleep_ms(100);
         }
     }
 }

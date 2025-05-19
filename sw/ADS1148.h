@@ -18,6 +18,8 @@
 #define SYSOCAL 0x60
 #define SYSGCAL 0x61
 #define SELFOCAL 0x62
+#define NOP 0xFF
+
 
 //adc registers
 #define MUX0 0x00

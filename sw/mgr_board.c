@@ -71,19 +71,19 @@ int main() {
         read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
         
         for (int i = 0; i < NUMBER_OF_ADC_CHANNELS; i++) {
-            printf("ADC0 channel %d: %ld\n", i, adc0_data_buff[i]);
+            printf("ADC0 channel %d: %f\n", i, convert_adc_data_to_real_value(adc0_data_buff[i]));
         }
         
         read_all_mux_channels_to_buff(voltage_buffer );
         
         for (int i = 0; i < MUX_CHANNELS; i++) {
-            printf("MUX channel %d: %0.2f\n", i, voltage_buffer[i]);
+            printf("MUX channel %d: %0.2f\n", i,voltage_buffer[i]);
         }
         //write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
 
 //        memset(adc0_data_buff, 0, NUMBER_OF_ADC_CHANNELS*sizeof(uint16_t));
 //        memset(adc1_data_buff, 0, NUMBER_OF_ADC_CHANNELS*sizeof(uint16_t));
-//
+        sleep_ms(1000);
     }
        
     return 0;
