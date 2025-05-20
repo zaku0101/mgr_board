@@ -25,33 +25,37 @@ void setup_adc_spi() {
     spi_set_format(spi0, 8, SPI_CPOL_0, SPI_CPHA_1, SPI_MSB_FIRST);
 }
 
-void send_command(adc_t adc, uint8_t command) {
+static void send_command(adc_t adc, uint8_t command) {
+    gpio_put(adc.ss_gpio, 0);
+    sleep_us(2);
     spi_write_blocking(adc.spi, &command, 1);
+    sleep_us(2);
+    gpio_put(adc.ss_gpio, 1);
+    sleep_us(5);
 }
 
-void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
-    uint8_t buf[2];
+static void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
+    uint8_t buf[3] = {0};
     buf[0] = (WREG << 4) | reg;  // shift the register address to the left by 3 bits
-    buf[1] = (0x00 << 4) | data_byte;
-
+    buf[1] = 0; // becouse of len of bytes = 1, thats why 0;
+    buf[2] = data_byte;
     gpio_put(adc.ss_gpio, 0);
-    sleep_ms(1);
-    spi_write_blocking(adc.spi, buf, 3);
-    sleep_ms(2);
+    sleep_us(2);
+    spi_write_blocking(adc.spi, buf, sizeof(buf));
     gpio_put(adc.ss_gpio, 1);
     sleep_ms(2);
 }
 
-uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
+static uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t* ret_buff) {
     uint8_t ret_val;
-    uint8_t buf[2];
-    buf[0] = (RREG << 4) | reg;  ;
-    buf[1] = 0x00;
-
+    uint8_t buf[2] = {0};
+    buf[0] = (RREG << 4) | reg;
+    
     gpio_put(adc.ss_gpio, 0);
-    sleep_ms(1);
-    spi_write_read_blocking(adc.spi, buf, ret_buff, len);
-    sleep_ms(2);
+    sleep_us(2);
+    spi_write_blocking(adc.spi, buf, sizeof(buf));
+    spi_read_blocking(adc.spi, NOP, ret_buff, 1);
+    sleep_us(2); 
     gpio_put(adc.ss_gpio, 1);
     sleep_ms(2);
 }
@@ -59,16 +63,9 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
 void adcs_init(adc_t * adcs) {
 
     for(int i = 0; i < 2; i++){
-        gpio_put(adcs[i].ss_gpio, 0);
-        sleep_ms(1);
         send_command(adcs[i], RESET);
         sleep_ms(2);
-        
-        gpio_put(adcs[i].ss_gpio, 1);
-
-        write_reg(adcs[i], MUX1, 0xA5); //Set for full scale external reference voltage 0-5V MOZE
-        
-         // set DRDY pin as data ready active low
+        send_command(adcs[i], SDATAC);
     }
 }
 
@@ -103,6 +100,7 @@ void config_spi_gpios(){
 
     gpio_put(ADC0_CS, 1);
     gpio_put(ADC1_CS, 1);
+    sleep_ms(16);
     gpio_put(ADC0_START, 1);
     gpio_put(ADC1_START, 1);
 }
@@ -127,14 +125,17 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
     write_reg(adc, MUX0, channel);
 }
 
-uint16_t read_data(adc_t adc, uint8_t command) {
-    uint8_t ret_buff[3];
-    uint8_t buff[3] = {command};
+uint16_t read_data(adc_t adc, uint8_t len) {
+    uint8_t rdata_command = RDATA;
+    uint8_t ret_buff[2];
     gpio_put(adc.ss_gpio, 0);
-    spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
-    // spi_write_blocking(adc.spi, &command, 1);
-    // spi_read_blocking(adc.spi, 0, ret_buff, 2);
+    sleep_us(2);
+    spi_write_blocking(adc.spi, &rdata_command, 1);
+    spi_read_blocking(adc.spi, NOP, &ret_buff, sizeof(ret_buff));
+    sleep_us(2);
     gpio_put(adc.ss_gpio, 1);
+    sleep_us(5);
+    
     //printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
     return ((uint16_t)ret_buff[1] << 8) | ret_buff[2];
 }
@@ -150,28 +151,15 @@ void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_bu
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
             uint8_t cmd = SYNC;
             uint8_t recv_command;
-            //send_command(adcs[i], WAKEUP);
-            //gpio_put(adcs[i].ss_gpio, 0);
-            //spi_write_blocking(adcs[i].spi, &command_table[j], 1);
-            //spi_write_blocking(adcs[i].spi, &cmd, 1);
-            send_command(adcs[i], RESET);
-            sleep_ms(10);
-            send_command(adcs[i], SDATAC);
-            printf("command: %x\n", command_table[j]);
-            write_reg(adcs[i],MUX0, command_table[j]);
-            read_reg(adcs[i],MUX0, &recv_command, 1);
+            
+            write_reg(adcs[i], MUX0, command_table[j]);
+            read_reg(adcs[i], MUX0, &recv_command);
             printf("MUX0: %x\n", recv_command);
-
-
             send_command(adcs[i], SYNC);
-            // sleep_ms(5);
-            //gpio_put(adcs[i].ss_gpio, 1);
-
             while(gpio_get(adcs[i].DRDY_PIN) == 0){
                 tight_loop_contents(); 
             }
             adc0_meas_buff[j] = read_data(adcs[i], RDATA);
-            send_command(adcs[i], SLEEP);
             sleep_ms(200);
         }
     }
