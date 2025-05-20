@@ -12,8 +12,8 @@
 //#define LOW_DAC_VALUE 0x98
 //#define HIGH_DAC_VALUE 0x98
 
-#define LOW_DAC_VALUE  0x00
-#define HIGH_DAC_VALUE 0x00
+#define LOW_DAC_VALUE  0x01
+#define HIGH_DAC_VALUE 0x01
 
 extern uint8_t adc_reg_addr[DAC_CHANNEL_COUNT];
 

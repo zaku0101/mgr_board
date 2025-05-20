@@ -17,7 +17,7 @@ void gpio_callback(uint gpio, uint32_t events) {
 }
 
 void setup_adc_spi() {
-    spi_init(spi0, 100 * 1000);
+    spi_init(spi0, 1000 * 1000);
     gpio_set_function(SPI0_MISO, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_MOSI, GPIO_FUNC_SPI);
     gpio_set_function(SPI0_SCK, GPIO_FUNC_SPI);
@@ -26,20 +26,18 @@ void setup_adc_spi() {
 }
 
 void send_command(adc_t adc, uint8_t command) {
-    gpio_put(adc.ss_gpio, 0);
-    sleep_ms(2);
     spi_write_blocking(adc.spi, &command, 1);
-    gpio_put(adc.ss_gpio, 1);
 }
 
 void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
-    uint8_t buf[4];
+    uint8_t buf[2];
     buf[0] = (WREG << 4) | reg;  // shift the register address to the left by 3 bits
-    buf[1] = 0x01;
-    buf[2] = data_byte;
+    buf[1] = (0x00 << 4) | data_byte;
 
     gpio_put(adc.ss_gpio, 0);
+    sleep_ms(1);
     spi_write_blocking(adc.spi, buf, 3);
+    sleep_ms(2);
     gpio_put(adc.ss_gpio, 1);
     sleep_ms(2);
 }
@@ -48,32 +46,36 @@ uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t * ret_buff, uint16_t len) {
     uint8_t ret_val;
     uint8_t buf[2];
     buf[0] = (RREG << 4) | reg;  ;
-    buf[1] = 0x01;
+    buf[1] = 0x00;
 
     gpio_put(adc.ss_gpio, 0);
-    sleep_ms(2);
+    sleep_ms(1);
     spi_write_read_blocking(adc.spi, buf, ret_buff, len);
+    sleep_ms(2);
     gpio_put(adc.ss_gpio, 1);
+    sleep_ms(2);
 }
 
 void adcs_init(adc_t * adcs) {
-    for(int i = 0; i < 2; i++){
-        gpio_put(ADC0_START, 1);
-        gpio_put(ADC1_START, 1);
 
+    for(int i = 0; i < 2; i++){
         gpio_put(adcs[i].ss_gpio, 0);
         sleep_ms(1);
+        send_command(adcs[i], RESET);
+        sleep_ms(2);
         
-        uint8_t cmd = RESET;
-        spi_write_blocking(adcs[i].spi, &cmd, 1);
-        sleep_ms(3);
-        cmd = SDATAC;
-        spi_write_blocking(adcs[i].spi, &cmd, 1);
+        gpio_put(adcs[i].ss_gpio, 1);
 
         write_reg(adcs[i], MUX1, 0xA5); //Set for full scale external reference voltage 0-5V MOZE
         
-        gpio_put(adcs[i].ss_gpio, 1); // set DRDY pin as data ready active low
+         // set DRDY pin as data ready active low
     }
+}
+
+void toogle_start(uint8_t start_pin) {
+    gpio_put(start_pin, 1);
+    sleep_ms(2);
+    gpio_put(start_pin, 0);
 }
 
 void config_spi_gpios(){
@@ -101,16 +103,18 @@ void config_spi_gpios(){
 
     gpio_put(ADC0_CS, 1);
     gpio_put(ADC1_CS, 1);
+    gpio_put(ADC0_START, 1);
+    gpio_put(ADC1_START, 1);
 }
 
-void adcs_start(adc_t * adcs) {
-    sleep_ms(16);
-    for(int i = 0; i < 2; i++){
-        gpio_put(adcs[i].START_PIN, 1);
-        sleep_ms(5);
-        gpio_put(adcs[i].START_PIN, 0);
-    }
-}
+// void adcs_start(adc_t * adcs) {
+//     sleep_ms(16);
+//     for(int i = 0; i < 2; i++){
+//         gpio_put(adcs[i].START_PIN, 1);
+//         sleep_ms(5);
+//         gpio_put(adcs[i].START_PIN, 0);
+//     }
+// }
 
 void adcs_reset(adc_t * adcs) {
     for(int i = 0; i < 2; i++){
@@ -125,52 +129,50 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 
 uint16_t read_data(adc_t adc, uint8_t command) {
     uint8_t ret_buff[3];
-    uint8_t buff[3] = {command,NOP,NOP};
+    uint8_t buff[3] = {command};
     gpio_put(adc.ss_gpio, 0);
     spi_write_read_blocking(adc.spi, buff, ret_buff, 3);
     // spi_write_blocking(adc.spi, &command, 1);
     // spi_read_blocking(adc.spi, 0, ret_buff, 2);
     gpio_put(adc.ss_gpio, 1);
-    printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
+    //printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
     return ((uint16_t)ret_buff[1] << 8) | ret_buff[2];
 }
 
 float convert_adc_data_to_real_value(uint16_t adc_data) {
-    return ((int16_t)adc_data) * 5.0f / 32768.0f;
+    return ((int16_t)adc_data) * 5.0f / 32768.0f / 20.0f;
 }
 
 //MEAS AMPLIFIER HAS 20V/V amplification
 
 void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_buff, int16_t * adc1_meas_buff) {
-    for(int i = 0; i < 1; i++){
+    for(int i = 0; i < 2; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
             uint8_t cmd = SYNC;
             uint8_t recv_command;
-            send_command(adcs[i], WAKEUP);
-            sleep_ms(5);
+            //send_command(adcs[i], WAKEUP);
             //gpio_put(adcs[i].ss_gpio, 0);
             //spi_write_blocking(adcs[i].spi, &command_table[j], 1);
             //spi_write_blocking(adcs[i].spi, &cmd, 1);
-           send_command(adcs[i], RESET);
-            // sleep_ms(10);
+            send_command(adcs[i], RESET);
+            sleep_ms(10);
             send_command(adcs[i], SDATAC);
             printf("command: %x\n", command_table[j]);
             write_reg(adcs[i],MUX0, command_table[j]);
-            sleep_ms(5);
             read_reg(adcs[i],MUX0, &recv_command, 1);
             printf("MUX0: %x\n", recv_command);
 
 
             send_command(adcs[i], SYNC);
-            sleep_ms(5);
+            // sleep_ms(5);
             //gpio_put(adcs[i].ss_gpio, 1);
 
             while(gpio_get(adcs[i].DRDY_PIN) == 0){
                 tight_loop_contents(); 
             }
             adc0_meas_buff[j] = read_data(adcs[i], RDATA);
-
-            sleep_ms(100);
+            send_command(adcs[i], SLEEP);
+            sleep_ms(200);
         }
     }
 }
