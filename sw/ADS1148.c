@@ -25,7 +25,7 @@ void setup_adc_spi() {
     spi_set_format(spi0, 8, SPI_CPOL_0, SPI_CPHA_1, SPI_MSB_FIRST);
 }
 
-static void send_command(adc_t adc, uint8_t command) {
+void send_command(adc_t adc, uint8_t command) {
     gpio_put(adc.ss_gpio, 0);
     sleep_us(2);
     spi_write_blocking(adc.spi, &command, 1);
@@ -34,7 +34,7 @@ static void send_command(adc_t adc, uint8_t command) {
     sleep_us(5);
 }
 
-static void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
+void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
     uint8_t buf[3] = {0};
     buf[0] = (WREG << 4) | reg;  // shift the register address to the left by 3 bits
     buf[1] = 0; // becouse of len of bytes = 1, thats why 0;
@@ -46,7 +46,7 @@ static void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte) {
     sleep_ms(2);
 }
 
-static uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t* ret_buff) {
+uint8_t read_reg(adc_t adc, uint8_t reg) {
     uint8_t ret_val;
     uint8_t buf[2] = {0};
     buf[0] = (RREG << 4) | reg;
@@ -54,14 +54,15 @@ static uint8_t read_reg(adc_t adc, uint8_t reg, uint8_t* ret_buff) {
     gpio_put(adc.ss_gpio, 0);
     sleep_us(2);
     spi_write_blocking(adc.spi, buf, sizeof(buf));
-    spi_read_blocking(adc.spi, NOP, ret_buff, 1);
+    spi_read_blocking(adc.spi, NOP, &ret_val, 1);
     sleep_us(2); 
     gpio_put(adc.ss_gpio, 1);
     sleep_ms(2);
+
+    return ret_val;
 }
 
 void adcs_init(adc_t * adcs) {
-
     for(int i = 0; i < 2; i++){
         send_command(adcs[i], RESET);
         sleep_ms(2);
@@ -128,20 +129,32 @@ void set_measured_channel(adc_t adc, uint8_t channel) {
 uint16_t read_data(adc_t adc, uint8_t len) {
     uint8_t rdata_command = RDATA;
     uint8_t ret_buff[2];
+
     gpio_put(adc.ss_gpio, 0);
     sleep_us(2);
     spi_write_blocking(adc.spi, &rdata_command, 1);
-    spi_read_blocking(adc.spi, NOP, &ret_buff, sizeof(ret_buff));
+    spi_read_blocking(adc.spi, NOP, ret_buff, 2);
     sleep_us(2);
     gpio_put(adc.ss_gpio, 1);
     sleep_us(5);
     
     //printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
-    return ((uint16_t)ret_buff[1] << 8) | ret_buff[2];
+    return (uint16_t)((uint16_t)(ret_buff[0] << 8) | ret_buff[1]);
 }
 
 float convert_adc_data_to_real_value(uint16_t adc_data) {
-    return ((int16_t)adc_data) * 5.0f / 32768.0f / 20.0f;
+    // Convert unsigned 16-bit to signed 16-bit, then scale to voltage
+    return (((int16_t)adc_data) * 5.0f / (float)(1 << 15));
+}
+
+void sync(adc_t adc){
+    uint8_t cmd[2] = {SYNC, SYNC};
+    gpio_put(adc.ss_gpio, 0);
+    sleep_us(2);
+    spi_write_blocking(adc.spi, cmd, 2);
+    sleep_us(2);
+    gpio_put(adc.ss_gpio, 1);
+    sleep_us(5);
 }
 
 //MEAS AMPLIFIER HAS 20V/V amplification
@@ -149,18 +162,22 @@ float convert_adc_data_to_real_value(uint16_t adc_data) {
 void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_buff, int16_t * adc1_meas_buff) {
     for(int i = 0; i < 2; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
-            uint8_t cmd = SYNC;
-            uint8_t recv_command;
-            
             write_reg(adcs[i], MUX0, command_table[j]);
-            read_reg(adcs[i], MUX0, &recv_command);
-            printf("MUX0: %x\n", recv_command);
-            send_command(adcs[i], SYNC);
-            while(gpio_get(adcs[i].DRDY_PIN) == 0){
+            printf("MUX0:%02X\n", read_reg(adcs[i], MUX0));
+            sync(adcs[i]);
+
+            while(gpio_get(adcs[i].DRDY_PIN) == 1){
                 tight_loop_contents(); 
             }
-            adc0_meas_buff[j] = read_data(adcs[i], RDATA);
-            sleep_ms(200);
+            if(i == 0){
+                adc0_meas_buff[j] = read_data(adcs[i], 0x02);
+                printf("RAW DATA ADC0:%d %04X\n",j ,adc0_meas_buff[j]);
+                printf("==========================\n"); 
+            } else {
+                adc1_meas_buff[j] = read_data(adcs[i], 0x02);
+                printf("RAW DATA ADC1:%d %04X\n",j ,adc1_meas_buff[j]);
+                printf("==========================\n");
+            }
         }
     }
 }

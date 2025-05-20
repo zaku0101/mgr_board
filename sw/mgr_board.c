@@ -43,7 +43,6 @@ static adc_t adcs[] = {
 int16_t adc0_data_buff[NUMBER_OF_ADC_CHANNELS];
 int16_t adc1_data_buff[NUMBER_OF_ADC_CHANNELS];
 
-
 int main() {
     stdio_init_all();
     init_mux();
@@ -57,63 +56,24 @@ int main() {
     setup_pwm_settings();
 
     config_spi_gpios();
-    // adcs_start(adcs);
     setup_adc_spi();
     
     adcs_init(adcs);
 
     while (true) {
+        printf("\n\n!!!NEW MEASUREMENT!!!\n\n");
+        uint16_t value=0;
+        uint8_t adc0_reg_val = 0;
 
-        printf("start loooop\n");
-        for(int i =0; i< 7; i++){
-            uint8_t readed_val[4];
-            uint8_t nops[] ={NOP, NOP};
-            uint16_t val =0;
-            uint8_t reg_data[3];
-            write_reg(adcs[0], MUX0, adc_input_channels[i]);
-            read_reg(adcs[0], MUX0, reg_data, 2);
+        read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
 
-            gpio_put(adcs[0].ss_gpio, 0);
-            // send_command(adcs[0], SYNC);
-
-            while(gpio_get(adcs[0].DRDY_PIN) == 1){
-                tight_loop_contents();
-            }
-            printf("ADC0 DRDY pin is low\n");
-            send_command(adcs[0], RDATA);
-
-            spi_read_blocking(adcs[0].spi,NOP,readed_val, 3);
-        
-            //printf("ADC0 channel %d: %x\n", i, val);
-            send_command(adcs[0], RESET);
-            gpio_put(adcs[0].ss_gpio, 1);
-
-
-            val = readed_val[2] << 8 | readed_val[3];
-            printf("ADC0 MUX0: %x%x\n", reg_data[0], reg_data[1]);
-            printf("ADC0 channel %d: %f\n", i, convert_adc_data_to_real_value(val));
-            //send_command(adcs[0], SLEEP);
-            sleep_ms(400);
+        for(int i =0; i<NUMBER_OF_ADC_CHANNELS;i++){
+            // printf("ADC0:%d %04X\n",i ,adc0_data_buff[i]);
+            // printf("ADC1:%d %04X\n",i ,adc1_data_buff[i]);
+            printf("ADC0:%d %f\n",i ,convert_adc_data_to_real_value(adc0_data_buff[i]));
+            printf("ADC1:%d %f\n",i ,convert_adc_data_to_real_value(adc1_data_buff[i]));
         }
 
-        // read_reg(adcs[1], MUX0, reg_data, 4);
-        // printf("ADC1 MUX0: %x %x %x %x\n", reg_data[0], reg_data[1], reg_data[2], reg_data[3]);
-        // read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
-        
-        // for (int i = 0; i < NUMBER_OF_ADC_CHANNELS; i++) {
-        //     printf("ADC0 channel %d: %f\n", i, convert_adc_data_to_real_value(adc0_data_buff[i]));
-        //     //printf("ADC1 channel %d: %f\n", i, convert_adc_data_to_real_value(adc1_data_buff[i]));
-        // }
-        
-        // read_all_mux_channels_to_buff(voltage_buffer );
-        
-        // for (int i = 0; i < MUX_CHANNELS; i++) {
-        //     printf("MUX channel %d: %0.2f\n", i,voltage_buffer[i]);
-        // }
-        //write_data(filename, adc0_data_buff, adc1_data_buff, &counter);
-
-//        memset(adc0_data_buff, 0, NUMBER_OF_ADC_CHANNELS*sizeof(uint16_t));
-//        memset(adc1_data_buff, 0, NUMBER_OF_ADC_CHANNELS*sizeof(uint16_t));
         sleep_ms(1000);
     }
        
