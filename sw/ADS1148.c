@@ -138,7 +138,6 @@ uint16_t read_data(adc_t adc, uint8_t len) {
     gpio_put(adc.ss_gpio, 1);
     sleep_us(5);
     
-    //printf("ADC data: %x %x %x\n", ret_buff[0], ret_buff[1],ret_buff[2]);
     return (uint16_t)((uint16_t)(ret_buff[0] << 8) | ret_buff[1]);
 }
 
@@ -159,24 +158,22 @@ void sync(adc_t adc){
 
 //MEAS AMPLIFIER HAS 20V/V amplification
 
-void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_buff, int16_t * adc1_meas_buff) {
+void read_adc_data(adc_t * adcs, uint8_t * command_table, float * adc0_meas_buff, float * adc1_meas_buff) {
+    uint16_t raw_data=0;
     for(int i = 0; i < 2; i++){
         for(int j = 0; j < NUMBER_OF_ADC_CHANNELS; j++){
             write_reg(adcs[i], MUX0, command_table[j]);
-            printf("MUX0:%02X\n", read_reg(adcs[i], MUX0));
             sync(adcs[i]);
 
             while(gpio_get(adcs[i].DRDY_PIN) == 1){
                 tight_loop_contents(); 
             }
             if(i == 0){
-                adc0_meas_buff[j] = read_data(adcs[i], 0x02);
-                printf("RAW DATA ADC0:%d %04X\n",j ,adc0_meas_buff[j]);
-                printf("==========================\n"); 
+                raw_data = read_data(adcs[i], 0x02);
+                adc0_meas_buff[j] = convert_adc_data_to_real_value(raw_data);
             } else {
-                adc1_meas_buff[j] = read_data(adcs[i], 0x02);
-                printf("RAW DATA ADC1:%d %04X\n",j ,adc1_meas_buff[j]);
-                printf("==========================\n");
+                raw_data = read_data(adcs[i], 0x02);
+                adc1_meas_buff[j] = convert_adc_data_to_real_value(raw_data);
             }
         }
     }

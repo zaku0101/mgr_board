@@ -40,13 +40,13 @@ static adc_t adcs[] = {
     }
 };
 
-int16_t adc0_data_buff[NUMBER_OF_ADC_CHANNELS];
-int16_t adc1_data_buff[NUMBER_OF_ADC_CHANNELS];
+float adc0_data_buff[NUMBER_OF_ADC_CHANNELS];
+float adc1_data_buff[NUMBER_OF_ADC_CHANNELS];
 
 int main() {
     stdio_init_all();
     init_mux();
-    //init_sd_card();
+    init_sd_card();
 
     setup_dac_spi();
     init_dac(spi1);
@@ -62,20 +62,25 @@ int main() {
 
     while (true) {
         printf("\n\n!!!NEW MEASUREMENT!!!\n\n");
-        uint16_t value=0;
-        uint8_t adc0_reg_val = 0;
 
         read_adc_data(adcs, adc_input_channels, adc0_data_buff, adc1_data_buff);
 
-        for(int i =0; i<NUMBER_OF_ADC_CHANNELS;i++){
-            // printf("ADC0:%d %04X\n",i ,adc0_data_buff[i]);
-            // printf("ADC1:%d %04X\n",i ,adc1_data_buff[i]);
-            printf("ADC0:%d %f\n",i ,convert_adc_data_to_real_value(adc0_data_buff[i]));
-            printf("ADC1:%d %f\n",i ,convert_adc_data_to_real_value(adc1_data_buff[i]));
-        }
+        read_all_mux_channels_to_buff(voltage_buffer);
+        
+        write_data(filename, 
+                    adc0_data_buff, 
+                    adc1_data_buff, 
+                    voltage_buffer, 
+                    &counter);
+        printf("Data written to file: %s\n", filename);
+
+        memset(adc0_data_buff, 0, sizeof(adc0_data_buff));
+        memset(adc1_data_buff, 0, sizeof(adc1_data_buff));
+        memset(voltage_buffer, 0, sizeof(voltage_buffer));
 
         sleep_ms(1000);
     }
        
     return 0;
+
 }

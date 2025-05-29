@@ -59,5 +59,5 @@ float convert_adc_data_to_real_value(uint16_t adc_data);
 void adcs_init(adc_t * adcs);
 uint8_t read_reg(adc_t adc, uint8_t reg);
 void write_reg(adc_t adc, uint8_t reg, uint8_t data_byte);
-void read_adc_data(adc_t * adcs, uint8_t * command_table, int16_t * adc0_meas_buff, int16_t * adc1_meas_buff);
+void read_adc_data(adc_t * adcs, uint8_t * command_table, float * adc0_meas_buff, float * adc1_meas_buff);
 void sync(adc_t adc);
