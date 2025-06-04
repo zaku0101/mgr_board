@@ -67,11 +67,10 @@ int main() {
 
         read_all_mux_channels_to_buff(voltage_buffer);
         
-        write_data(filename, 
-                    adc0_data_buff, 
-                    adc1_data_buff, 
-                    voltage_buffer, 
-                    &counter);
+        for(int i =0; i<MUX_CHANNELS; i++){
+            printf("MUX_%d: %f\n",i,voltage_buffer[i]); // Convert to voltage
+        }
+        write_data(filename, adc0_data_buff, adc1_data_buff, voltage_buffer, &counter);
         printf("Data written to file: %s\n", filename);
 
         memset(adc0_data_buff, 0, sizeof(adc0_data_buff));

@@ -8,13 +8,13 @@
 #define PWM_4 20
 #define PWM_5 19
 
-// //standard PWM levels
-// #define PWM_LEVEL_0 50000
-// #define PWM_LEVEL_1 62500
+//standard PWM levels
+#define PWM_LEVEL_0 50000
+#define PWM_LEVEL_1 62500
 
 //reduced PWM levels for debugging
-#define PWM_LEVEL_0 300
-#define PWM_LEVEL_1 300
+// #define PWM_LEVEL_0 300
+// #define PWM_LEVEL_1 300
 
 #define PWM_SYSCLK_DIV 2
 
